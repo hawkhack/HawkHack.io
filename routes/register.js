@@ -23,7 +23,6 @@ router.post('/insert', function (req, res, next) {
 				lastName: req.body.lastName,
 				email: req.body.email,
 				password: hash,
-				confpassword: req.body.password2,
 				shirtSize: req.body.txtShirtSize,
 				secQ: req.body.secQ,
 				sqcQA: req.body.secQA
