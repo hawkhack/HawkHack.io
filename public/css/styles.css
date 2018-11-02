@@ -5,8 +5,28 @@ body{
     background-repeat: no-repeat;
 }
 
-#section1{
-    padding: 6em 0;
+.section {
+      min-height: 750px;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+      padding: 100px 10px 0px;
+      background-size:cover;
+}
+
+.jumbotron {
+    height: 70vh;
+}
+
+section:nth-child(even) {
+    background-color: #ddd;
+}
+
+#intro{
+    /*random pic for now*/
+    background-color: info;
+    background-attachment: fixed;
+
 }
 
 .row{
