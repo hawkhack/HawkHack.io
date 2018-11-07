@@ -19,16 +19,21 @@
     <div>
         {{# each items }}
             <article class="item">
-                <div>Title: {{ this.name }}</div>
-                <div>Content: {{ this.email }}</div>
                 <div>ID: {{ this._id }}</div>
+                <div>First Name: {{ this.firstName }}</div>
+                <div>Last Name: {{ this.lastName }}</div>
+                <div>Email: {{ this.email }}</div>
+                <div>Password Hash: {{ this.password }}</div>
+                <div>Shirt Size: {{ this.shirtSize }}</div>
+                <div>Security Question: {{ this.secQ }}</div>
+                <div>Security Answer: {{ this.secQA }}</div>
             </article>
         {{/each}}
     </div>
 </section>
 <section class="update">
     <h3>Update Data</h3>
-    <form action="/update" method="post">
+    <form action="/mongotest/update" method="post">
         <div class="input">
             <label for="id">ID</label>
             <input type="text" id="id" name="id">
@@ -47,7 +52,7 @@
 </section>
 <section class="delete">
     <h3>Delete Data</h3>
-    <form action="/delete" method="post">
+    <form action="/mongotest/delete" method="post">
         <div class="input">
             <label for="id">ID</label>
             <input type="text" id="id" name="id">
