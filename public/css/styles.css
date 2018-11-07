@@ -12,6 +12,9 @@ body{
 .row{
     margin: 0px;
 }
+.form-control:focus{
+    box-shadow: none;
+}
 
 .foldBtn{
     background:transparent; 
