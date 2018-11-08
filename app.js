@@ -27,9 +27,9 @@ mongoose.connect('mongodb://Ramial:Dell2314!@cluster0-shard-00-00-tfwgd.gcp.mong
 
 //routes
 var mongotest = require('./routes/mongotest');
-var registerRouter = require('./routes/register');
-var loginRouter = require ('./routes/login');
-var contactRouter = require('./routes/contact');
+// var registerRouter = require('./routes/register');
+// var loginRouter = require ('./routes/login');
+// var contactRouter = require('./routes/contact');
 
 
 //View engine setup
@@ -56,12 +56,16 @@ app.use(session({
 }))
 
 app.use('/mongotest', mongotest);
-app.use('/register', registerRouter);
-app.use('/login', loginRouter);
-app.use('/contact', contactRouter);
+//app.use('/register', registerRouter);
+//app.use('/login', loginRouter);
+//app.use('/contact', contactRouter);
 
 app.get('/', function (req, res) {
     res.render('home', {title: 'Montclair Hackathon'});
+});
+
+app.get('/preregister', function(req, res, next){
+	res.redirect('https://hawkhack.typeform.com/to/AmjCXs');
 });
 
 /*
