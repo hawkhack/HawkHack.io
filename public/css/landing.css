@@ -6656,3 +6656,8 @@ body > * {
   display: none;
   overflow: hidden;
 }
+
+/* adding custom CSS */
+.inner{
+  
+}
