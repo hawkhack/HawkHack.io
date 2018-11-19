@@ -1,3 +1,4 @@
+#home
 body{
    /* background-image: url(http://www.montclaircomputerclub.com/wp-content/uploads/2018/09/ccis-sign.jpg.3.1x.generic.jpg);*/
     background-attachment: fixed;
@@ -168,15 +169,6 @@ body{
 /* mongotest css */
 
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
-body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -209,16 +201,6 @@ section h3 {
 
 /* mongotest css*/
 body {
-    padding: 50px;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-  
-a {
-    color: #00B7FF;
-}
-
-body {
-    padding: 50px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
   
