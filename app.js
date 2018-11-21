@@ -56,14 +56,13 @@ app.use(session({
   //cookie: { secure: true }
 }))
 
-app.use('/mongotest', mongotest);
 app.use('/landing', landing);
 //app.use('/register', registerRouter);
 //app.use('/login', loginRouter);
 //app.use('/contact', contactRouter);
 
 app.get('/', function (req, res) {
-    res.render('home', {title: 'Montclair Hackathon'});
+    res.render('landing', {title: 'Montclair Hackathon', eventDate:'Match/April, 2019'});
 });
 
 
