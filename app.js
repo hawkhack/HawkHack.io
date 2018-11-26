@@ -33,6 +33,7 @@ var landing = require('./routes/landing');
 var contactRouter = require('./routes/contact');
 
 
+
 //View engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', exphbs({
@@ -63,7 +64,7 @@ app.use('/landing', landing);
 app.use('/contact', contactRouter);
 
 app.get('/', function (req, res) {
-    res.render('home', {title: 'Montclair Hackathon'});
+    res.render('landing', {title: 'Montclair Hackathon', eventDate:'March/April, 2019'});
 });
 
 
