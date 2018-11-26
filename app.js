@@ -30,7 +30,7 @@ var mongotest = require('./routes/mongotest');
 var landing = require('./routes/landing');
 // var registerRouter = require('./routes/register');
 // var loginRouter = require ('./routes/login');
-// var contactRouter = require('./routes/contact');
+var contactRouter = require('./routes/contact');
 
 
 //View engine setup
@@ -60,7 +60,7 @@ app.use('/mongotest', mongotest);
 app.use('/landing', landing);
 //app.use('/register', registerRouter);
 //app.use('/login', loginRouter);
-//app.use('/contact', contactRouter);
+app.use('/contact', contactRouter);
 
 app.get('/', function (req, res) {
     res.render('home', {title: 'Montclair Hackathon'});

@@ -1,63 +1,73 @@
+
 <container class="text-center">
   <!-- Navbar -->
 
   <!-- Cover -->
   <div class="d-flex align-items-center section-aquamarine py-5 cover" style="background-image: url(images/hero.jpg);">
+
     <div class="container">
+      
       <div class="row">
-        <div class="col-lg-12 text-white mt-5">
-          <h1 class="display-2 d-none d-md-block">Montclair Hackathon</h1>
-          <h1 class="display-4 d-block d-md-none">Montclair Hackathon</h1>
-          <p class="">March 23ed - 25th, 2019 </p>
-          <a href="#register" class="btn btn-lg mt-4 btn-outline-light">Pre-Register Now</a><i class="d-block fa fa-angle-down pt-5 fa-3x"></i>
+
+        <div class="col-md-12">
+          <h1 class="display-2">HawkHack</h1>
+          <h2>Montclair State's Hackathon</h2>
+          <h3 class="display-5">Get on our mailing list</h3>
+          <br />
+          <a href="https://hawkhack.typeform.com/to/AmjCXs" target="_blank" class="btn btn-lg btn-outline-light">Pre-Register
+            Now</a>
+          <i class="d-block fa fa-angle-down pt-4 fa-3x"></i>
         </div>
       </div>
     </div>
   </div>
   <!-- About -->
   <div class="py-5 section-parallax" style="background-image: url(images/msulanding.jpg);" id="about">
-    <div class="container my-5 bg-light p-4">
+    <div class="container" style="background-color:#f3f3f3; padding:2rem;">
+      <h1>Location</h1>
+      <br />
       <div class="row mx-auto">
+        <div class="col-md-12" style="height: 20em;">
+          <iframe frameborder="0" width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA85Zqc7_wokRxw6E4CIJnB4&key=AIzaSyB4FZgCk09zSlEACZ5epM4h02W65vLjBDw"></iframe>
+        </div>
         <div class="col-md-12">
-          <h1 class="mb-3">About our event</h1>
-          <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-          <div class="col-md-12">
-            <div>
-              <iframe frameborder="0" width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA85Zqc7_wokRxw6E4CIJnB4&key=AIzaSyB4FZgCk09zSlEACZ5epM4h02W65vLjBDw"></iframe>
-            </div>
-          </div>
-          {{!-- <div class="col-sm-12" style="padding-left: 50px;">
-            <div style="align-content: center;border-radius: 30px; width: 500px; height:200px; overflow: hidden;">
-              <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA85Zqc7_wokRxw6E4CIJnB4&key=AIzaSyB4FZgCk09zSlEACZ5epM4h02W65vLjBDw"
-                allowfullscreen></iframe>
-            </div>
-          </div> --}}
-          <a href="#schedule" class="btn btn-outline-primary btn-lg m-2">Schedule</a>
-          <a class="btn btn-primary btn-lg m-2" href="#register">Pre-Register</a>
+          {{!-- <a href="#schedule" class="btn btn-outline-primary btn-lg m-2">Schedule</a> --}}
+          <a class="btn btn-primary btn-lg m-2" href="https://hawkhack.typeform.com/to/AmjCXs" target="_blank">Pre-Register</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="container">
-    <h1>FAQ</h1>
-    <div class="arounded" style="padding:15px;">
-      <div class="row">
-        <div class="col-md-3">
-          test
-        </div>
-        <div class="col-md-9">
-          test
-        </div>
-      </div>
+<div class="container" id="FAQ" style="display: none;">
+  <h1>FAQs</h1>
+  <div class="row text-md-left ">
+    <div class="col-md-6">
+      <h3>Question</h3>
+      <p>Answer</p>
+      <h3>Question</h3>
+      <p>Answer</p>
+      <h3>Question</h3>
+      <p>Answer</p>
+      <h3>Question</h3>
+      <p>Answer</p>
+      <h3>Question</h3>
+      <p>Answer</p>
+    </div>
+    <div class="col-md-6">
+      <h3>Question</h3>
+      <p>Answer</p>
+      <h3>Question</h3>
+      <p>Answer</p>
+      <h3>Question</h3>
+      <p>Answer</p>
+      <h3>Question</h3>
+      <p>Answer</p>
+      <h3>Question</h3>
+      <p>Answer</p>
     </div>
   </div>
-  </div>
-
+</div>
   <!-- Schedule -->
-  <div class="py-5 section-parallax" style="background-image: url(images/schedule.jpg);" id="schedule">
+  <div class="py-5 section-parallax" style="background-image: url(images/schedule.jpg); display: none;" id="schedule">
     <div class="container section-aquamarine">
       <div class="row">
         <div class="col-md-12">
@@ -144,18 +154,18 @@
       </div>
       <div class="row">
         <div class="col-md-3 col-6">
-          <img class="center-block img-fluid d-block" src="images/logo_1.png"> </div>
-        <div class="col-md-3 col-6">
-          <img class="center-block img-fluid d-block" src="images/logo_4.png"> </div>
-        <div class="col-md-3 col-6">
-          <img class="center-block img-fluid d-block" src="images/logo_3.png"> </div>
-        <div class="col-md-3 col-6">
-          <img class="center-block img-fluid d-block" src="images/logo_2.png"> </div>
+          <a href="https://www.bnymellon.com/us/en/home.jsp" target="_blank">
+            <img style="width:13em;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Bank-of-New-York-Mellon-Logo.svg/2000px-Bank-of-New-York-Mellon-Logo.svg.png" />
+          </a>
+        </div>
+        <div class="col-md-3 col-6"></div>
+        <div class="col-md-3 col-6"></div>
+        <div class="col-md-3 col-6"></div>
       </div>
     </div>
   </div>
   <!-- Call to action -->
-  <div class="py-5 section-aquamarine" id="register">
+  <div class="py-5 section-aquamarine" id="register" style="display:none;">
     <div class="container">
       <div class="row">
         <div class="col-md-8 text-md-left text-center">
@@ -164,43 +174,55 @@
             maximum from the lectures together with the possibility of joining exclusive side-events.</p>
         </div>
         <div class="col-md-4 align-self-center animate-in-right">
-          <a href="https://hawkhack.typeform.com/to/AmjCXs" class="btn btn-lg btn-light my-3">Sign Up</a>
+          <a href="" class="btn btn-lg btn-light my-3">Sign Up</a>
         </div>
       </div>
     </div>
   </div>
 </container>
 
-<footer class="text-md-left text-center p-4 bg-dark text-light" id="contact">
+<footer class="text-center p-4 bg-dark text-light" id="footer">
   <div class="container">
-    <div class="row">
-      <div class="my-3 col-lg-4 col-md-6">
-        <h3>Montclair Hackathon</h3>
-        <p class="text-muted">One day, 2020</p>
-        <p class="my-3">
-          <a href="https://goo.gl/maps/ayn28vkB5F92" target="blank" class="text-muted">1 Normal Ave, Montclair, NJ
-            07043</a>
-        </p>
-        <a class="btn btn-lg btn-primary" href="#">Register now</a>
+    <div class="row text-md-left">
+      <div class="col-md-4">
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#faq">FAQ</a>
+          </li>
+          <li>
+            <a href="#">HackHawk</a>
+          </li>
+          <li>
+            <a href="#sponsors">Sponsors</a>
+          </li>
+          <li>
+            <a href="#contact">Contacts</a>
+          </li>
+        </ul>
       </div>
-      <div class="my-3 col-lg-4 col-md-6">
-        <h3>Contact us</h3>
-        <form>
-          <fieldset class="form-group my-3">
-            <input type="email" class="form-control" id="Input Email" placeholder="Email"> </fieldset>
-          <fieldset class="form-group my-3">
-            <input type="message" class="form-control" id="Input Message" placeholder="Message"> </fieldset>
-          <button type="submit" class="btn btn-outline-primary">Submit</button>
-        </form>
-      </div>
-      <div class="col-lg-1"> </div>
-      <div class="my-3 col-lg-3">
-        <h3>Follow</h3>
+      <div class="col-md-4">
+        <h3>Stay in touch</h3>
         <a href="" target="blank"><i class="fab fa-facebook-square text-muted fa-3x m-2"></i></a>
         <a href="" target="blank"><i class="fab fa-twitter-square text-muted fa-3x m-2"></i></a>
-
+        <a href="" target="blank"><i class="fab fa-instagram text-muted fa-3x m-2"></i></a>
+      </div>
+      <div class="col-md-4" style="text-align:center;">
+        <h3>Montclair Hackathon</h3>
+        <div class="innerfooter">
+          <div class="devider">
+            <a href="https://goo.gl/maps/ayn28vkB5F92" target="blank" class="text-muted">1 Normal Ave, Montclair,
+              NJ
+              07043</a>
+          </div>
+          <a class="btn btn-lg btn-primary" target="_blank" href="https://hawkhack.typeform.com/to/AmjCXs">Pre-register
+            now</a>
+        </div>
       </div>
     </div>
+
     <div class="row">
       <div class="col-md-12">
         <p class="text-muted">© 2018 Copyright:
