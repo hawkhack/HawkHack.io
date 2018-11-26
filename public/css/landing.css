@@ -6658,6 +6658,21 @@ body > * {
 }
 
 /* adding custom CSS */
-.inner{
-  
+
+
+
+
+#footer ul{
+  list-style: none;
+  padding: 0;
+}
+#footer ul li{
+  margin-bottom: .25rem;
+}
+#footer ul li a{
+  text-decoration: none;
+}
+
+.innerfooter .devider{
+  margin-bottom: .50em;
 }

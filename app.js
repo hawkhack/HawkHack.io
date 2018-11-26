@@ -27,6 +27,11 @@ mongoose.connect('mongodb://Ramial:Dell2314!@cluster0-shard-00-00-tfwgd.gcp.mong
 
 //routes
 var mongotest = require('./routes/mongotest');
+var landing = require('./routes/landing');
+// var registerRouter = require('./routes/register');
+// var loginRouter = require ('./routes/login');
+var contactRouter = require('./routes/contact');
+
 
 
 //View engine setup
@@ -53,6 +58,10 @@ app.use(session({
 }))
 
 app.use('/mongotest', mongotest);
+app.use('/landing', landing);
+//app.use('/register', registerRouter);
+//app.use('/login', loginRouter);
+app.use('/contact', contactRouter);
 
 app.get('/', function (req, res) {
     res.render('landing', {title: 'Montclair Hackathon', eventDate:'March/April, 2019'});
