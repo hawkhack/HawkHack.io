@@ -1,4 +1,3 @@
-
 <container class="text-center">
   <!-- Navbar -->
 
@@ -6,15 +5,47 @@
   <div class="d-flex align-items-center section-aquamarine py-5 cover" style="background-image: url(images/hero.jpg);">
 
     <div class="container">
-      
+
       <div class="row">
         <div class="col-md-12">
-          <h1 class="display-2">HawkHack</h1>
-          <h2>Montclair State's Hackathon</h2>
-          <h3 class="display-5">Get on our mailing list</h3>
-          <br />
-          <a href="https://hawkhack.typeform.com/to/AmjCXs" target="_blank" class="btn btn-lg btn-outline-light">Pre-Register
-            Now</a>
+          <div class="form-group">
+            <h1 class="display-2">HawkHack</h1>
+            <h2>Montclair State's Hackathon</h2>
+            <h3 class="display-5">Get on our mailing list</h3>
+            <br />
+            <a href="http://eepurl.com/dOOzHL" target="_blank" class="btn btn-lg btn-outline-light">Pre-Register
+              Now</a>
+            <a class="btn btn-lg btn-outline-light">Contact Us</a>
+          </div>
+          <form action="/landing/contact" id="contactform" method="POST" role="form">
+            <fieldset>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input id="name" name="name" type="text" placeholder="Your name" required="required" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input id="email" name="email" type="text" placeholder="Your email" required="required" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input id="subject" name="subject" type="text" placeholder="Subject" required="required" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea style="height: 150px;" id="message" name="message" placeholder="Enter your message here"
+                      rows="3" required="required" class="form-control"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-outline-light">Send</button>
+                  <a class="btn btn-lg btn-outline-light">Cancel</a>
+                </div>
+              </div>
+            </fieldset>
+          </form>
           <i class="d-block fa fa-angle-down pt-4 fa-3x"></i>
         </div>
       </div>
@@ -31,40 +62,40 @@
         </div>
         <div class="col-md-12">
           {{!-- <a href="#schedule" class="btn btn-outline-primary btn-lg m-2">Schedule</a> --}}
-          <a class="btn btn-primary btn-lg m-2" href="https://hawkhack.typeform.com/to/AmjCXs" target="_blank">Pre-Register</a>
+          <a class="btn btn-primary btn-lg m-2" href="http://eepurl.com/dOOzHL" target="_blank">Pre-Register</a>
         </div>
       </div>
     </div>
   </div>
-<div class="container" id="FAQ" style="display: none;">
-  <h1>FAQs</h1>
-  <div class="row text-md-left ">
-    <div class="col-md-6">
-      <h3>Question</h3>
-      <p>Answer</p>
-      <h3>Question</h3>
-      <p>Answer</p>
-      <h3>Question</h3>
-      <p>Answer</p>
-      <h3>Question</h3>
-      <p>Answer</p>
-      <h3>Question</h3>
-      <p>Answer</p>
-    </div>
-    <div class="col-md-6">
-      <h3>Question</h3>
-      <p>Answer</p>
-      <h3>Question</h3>
-      <p>Answer</p>
-      <h3>Question</h3>
-      <p>Answer</p>
-      <h3>Question</h3>
-      <p>Answer</p>
-      <h3>Question</h3>
-      <p>Answer</p>
+  <div class="container" id="FAQ" style="display: none;">
+    <h1>FAQs</h1>
+    <div class="row text-md-left ">
+      <div class="col-md-6">
+        <h3>Question</h3>
+        <p>Answer</p>
+        <h3>Question</h3>
+        <p>Answer</p>
+        <h3>Question</h3>
+        <p>Answer</p>
+        <h3>Question</h3>
+        <p>Answer</p>
+        <h3>Question</h3>
+        <p>Answer</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Question</h3>
+        <p>Answer</p>
+        <h3>Question</h3>
+        <p>Answer</p>
+        <h3>Question</h3>
+        <p>Answer</p>
+        <h3>Question</h3>
+        <p>Answer</p>
+        <h3>Question</h3>
+        <p>Answer</p>
+      </div>
     </div>
   </div>
-</div>
   <!-- Schedule -->
   <div class="py-5 section-parallax" style="background-image: url(images/schedule.jpg); display: none;" id="schedule">
     <div class="container section-aquamarine">
@@ -216,7 +247,7 @@
               NJ
               07043</a>
           </div>
-          <a class="btn btn-lg btn-primary" target="_blank" href="https://hawkhack.typeform.com/to/AmjCXs">Pre-register
+          <a class="btn btn-lg btn-primary" target="_blank" href="http://eepurl.com/dOOzHL">Pre-register
             now</a>
         </div>
       </div>
@@ -225,7 +256,7 @@
     <div class="row">
       <div class="col-md-12">
         <p class="text-muted">© 2018 Copyright:
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Montclair Computer Club</a></p>
+          <a href="https://www.montclaircomputerclub.com/">Montclair Computer Club</a></p>
       </div>
     </div>
   </div>
