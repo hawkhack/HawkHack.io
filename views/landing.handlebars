@@ -3,9 +3,7 @@
 
   <!-- Cover -->
   <div class="d-flex align-items-center section-aquamarine py-5 cover" style="background-image: url(images/hero.jpg);">
-
     <div class="container">
-
       <div class="row">
         <div class="col-md-12">
           <div class="form-group">
@@ -15,9 +13,10 @@
             <br />
             <a href="http://eepurl.com/dOOzHL" target="_blank" class="btn btn-lg btn-outline-light">Pre-Register
               Now</a>
-            <a class="btn btn-lg btn-outline-light">Contact Us</a>
+            <a class="btn btn-lg btn-outline-light" id="ContactUsBtn">Contact Us</a>
           </div>
-          <form action="/landing/contact" id="contactform" method="POST" role="form">
+
+          <form action="/landing/contact" id="contactform" method="POST" role="form" style="display:none;">
             <fieldset>
               <div class="row">
                 <div class="col-md-6">
@@ -41,12 +40,12 @@
                       rows="3" required="required" class="form-control"></textarea>
                   </div>
                   <button type="submit" class="btn btn-lg btn-outline-light">Send</button>
-                  <a class="btn btn-lg btn-outline-light">Cancel</a>
+                  <a class="btn btn-lg btn-outline-light" id="cancel">Cancel</a>
                 </div>
               </div>
             </fieldset>
           </form>
-          <i class="d-block fa fa-angle-down pt-4 fa-3x"></i>
+          <i class="d-block fa fa-angle-down pt-4 fa-3x" id="cancel"></i>
         </div>
       </div>
     </div>
