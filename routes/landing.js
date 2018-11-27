@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
-var gmailUser = 'ramialhussein98@gmail.com';
-var gmailPass = 'Hassan111';
+var gmailUser = '';
+var gmailPass = '';
 
 router.get('/', (req, res) => {
     res.render('landing', { title: 'landing page' });
