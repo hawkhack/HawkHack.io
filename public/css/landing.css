@@ -6659,9 +6659,6 @@ body > * {
 
 /* adding custom CSS */
 
-
-
-
 #footer ul{
   list-style: none;
   padding: 0;
@@ -6676,3 +6673,9 @@ body > * {
 .innerfooter .devider{
   margin-bottom: .50em;
 }
+
+.active{
+  display: block !important;
+  background-color: transparent !important;
+}
+

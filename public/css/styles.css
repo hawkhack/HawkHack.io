@@ -277,3 +277,9 @@ button:hover {
     background: #95a5a6;
     border: 1px solid black;
 }
+
+.active{
+    display: block !important;
+}
+
+  
