@@ -5,59 +5,99 @@
   <div class="d-flex align-items-center section-aquamarine py-5 cover" style="background-image: url(images/hero.jpg);">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-white mt-5">
-          <h1 class="display-2 d-none d-md-block">Montclair Hackathon</h1>
-          <h1 class="display-4 d-block d-md-none">Montclair Hackathon</h1>
-          <p class="">{{eventDate}}</p>
-          <a href="#register" class="btn btn-lg mt-4 btn-outline-light">Pre-Register Now</a><i class="d-block fa fa-angle-down pt-5 fa-3x"></i>
+        <div class="col-md-12">
+          <div class="form-group">
+            <h1 class="display-2">HawkHack</h1>
+            <h2>Montclair State's Hackathon</h2>
+            <h3 class="display-5">Get on our mailing list</h3>
+            <br />
+            <a href="http://eepurl.com/dOOzHL" target="_blank" class="btn btn-lg btn-outline-light">Pre-Register
+              Now</a>
+            <a class="btn btn-lg btn-outline-light" id="ContactUsBtn">Contact Us</a>
+          </div>
+          <form action="/landing/contact" id="contactform" method="POST" role="form" style="display:none;">
+            <fieldset>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input id="name" name="name" type="text" placeholder="Your name" required="required" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input id="email" name="email" type="text" placeholder="Your email" required="required" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input id="subject" name="subject" type="text" placeholder="Subject" required="required" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea style="height: 150px;" id="message" name="message" placeholder="Enter your message here"
+                      rows="3" required="required" class="form-control"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-outline-light">Send</button>
+                  <a class="btn btn-lg btn-outline-light" id="cancel">Cancel</a>
+                </div>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </div>
     </div>
   </div>
   <!-- About -->
-  <div class="py-5 section-parallax" style="background-image: url(images/msulanding.jpg);" id="about">
-    <div class="container my-5 bg-light p-4">
+  {{!-- <div class="py-5 section-parallax" style="background-image: url(images/msulanding.jpg);" id="about">
+    <div class="container" style="background-color:#f3f3f3; padding:2rem;">
+      <h1>Location</h1>
+      <br />
       <div class="row mx-auto">
+        <div class="col-md-12" style="height: 20em;">
+          <iframe frameborder="0" width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA85Zqc7_wokRxw6E4CIJnB4&key=AIzaSyB4FZgCk09zSlEACZ5epM4h02W65vLjBDw"></iframe>
+        </div>
         <div class="col-md-12">
-          <h1 class="mb-3">About our event</h1>
-          <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-          <div class="col-md-12">
-            <div>
-              <iframe frameborder="0" width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA85Zqc7_wokRxw6E4CIJnB4&key=AIzaSyB4FZgCk09zSlEACZ5epM4h02W65vLjBDw"></iframe>
-            </div>
-          </div>
-          {{!-- <div class="col-sm-12" style="padding-left: 50px;">
-            <div style="align-content: center;border-radius: 30px; width: 500px; height:200px; overflow: hidden;">
-              <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA85Zqc7_wokRxw6E4CIJnB4&key=AIzaSyB4FZgCk09zSlEACZ5epM4h02W65vLjBDw"
-                allowfullscreen></iframe>
-            </div>
-          </div> --}}
           <a href="#schedule" class="btn btn-outline-primary btn-lg m-2">Schedule</a>
-          <a class="btn btn-primary btn-lg m-2" href="#register">Pre-Register</a>
+          <a class="btn btn-primary btn-lg m-2" href="http://eepurl.com/dOOzHL" target="_blank">Pre-Register</a>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container">
-    <h1>FAQ</h1>
-    <div class="arounded" style="padding:15px;">
-      <div class="row">
-        <div class="col-md-3">
-          test
-        </div>
-        <div class="col-md-9">
-          test
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
+  </div>--}}
+  
+  <iframe frameborder="0" width="100%" height="99%" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA85Zqc7_wokRxw6E4CIJnB4&key=AIzaSyB4FZgCk09zSlEACZ5epM4h02W65vLjBDw"></iframe>
 
+  <div class="container" id="FAQ" style="display: none;">
+    <h1>FAQs</h1>
+    <div class="row text-md-left ">
+      <div class="col-md-6">
+        <h3>Question</h3>
+        <p>Answer</p>
+        <h3>Question</h3>
+        <p>Answer</p>
+        <h3>Question</h3>
+        <p>Answer</p>
+        <h3>Question</h3>
+        <p>Answer</p>
+        <h3>Question</h3>
+        <p>Answer</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Question</h3>
+        <p>Answer</p>
+        <h3>Question</h3>
+        <p>Answer</p>
+        <h3>Question</h3>
+        <p>Answer</p>
+        <h3>Question</h3>
+        <p>Answer</p>
+        <h3>Question</h3>
+        <p>Answer</p>
+      </div>
+    </div>
+  </div>
   <!-- Schedule -->
-  <div class="py-5 section-parallax" style="background-image: url(images/schedule.jpg);" id="schedule">
+  <div class="py-5 section-parallax" style="background-image: url(images/schedule.jpg); display: none;" id="schedule">
     <div class="container section-aquamarine">
       <div class="row">
         <div class="col-md-12">
@@ -144,18 +184,18 @@
       </div>
       <div class="row">
         <div class="col-md-3 col-6">
-          <img class="center-block img-fluid d-block" src="images/logo_1.png"> </div>
-        <div class="col-md-3 col-6">
-          <img class="center-block img-fluid d-block" src="images/logo_4.png"> </div>
-        <div class="col-md-3 col-6">
-          <img class="center-block img-fluid d-block" src="images/logo_3.png"> </div>
-        <div class="col-md-3 col-6">
-          <img class="center-block img-fluid d-block" src="images/logo_2.png"> </div>
+          <a href="https://www.bnymellon.com/us/en/home.jsp" target="_blank">
+            <img style="width:13em;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Bank-of-New-York-Mellon-Logo.svg/2000px-Bank-of-New-York-Mellon-Logo.svg.png" />
+          </a>
+        </div>
+        <div class="col-md-3 col-6"></div>
+        <div class="col-md-3 col-6"></div>
+        <div class="col-md-3 col-6"></div>
       </div>
     </div>
   </div>
   <!-- Call to action -->
-  <div class="py-5 section-aquamarine" id="register">
+  <div class="py-5 section-aquamarine" id="register" style="display:none;">
     <div class="container">
       <div class="row">
         <div class="col-md-8 text-md-left text-center">
@@ -164,7 +204,7 @@
             maximum from the lectures together with the possibility of joining exclusive side-events.</p>
         </div>
         <div class="col-md-4 align-self-center animate-in-right">
-          <button id="open-popup" class="btn btn-lg btn-light my-3">Sign Up</button>
+          <a href="" class="btn btn-lg btn-light my-3">Sign Up</a>
         </div>
       </div>
     </div>
