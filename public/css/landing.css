@@ -61,9 +61,10 @@ html {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
+
 body {
   margin: 0;
-  font-family: Roboto;
+  font-family: sans-serif;
   font-size: 1rem;
   font-weight: 200;
   line-height: 1.5;
@@ -6677,5 +6678,13 @@ body > * {
 .active{
   display: block !important;
   background-color: transparent !important;
+}
+
+.inner{
+  padding: 2rem;
+}
+
+.row{
+  margin: 0!important;
 }
 
