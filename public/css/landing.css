@@ -6699,3 +6699,7 @@ body > * {
   vertical-align: middle; 
   display: inline-block;
 }  
+
+.btn-outline-light:hover{
+  color:var(--secondary) !important;
+}
