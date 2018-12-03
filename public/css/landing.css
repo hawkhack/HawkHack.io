@@ -6679,3 +6679,46 @@ body > * {
   background-color: transparent !important;
 }
 
+.footcol2, .footcol3{
+  text-align: center;
+}
+
+.footcol1 li{
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  background: #d1190d;
+  margin-right: 50px;
+  margin-top:5px;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 30px;
+}
+
+.footcol1 li a{
+  color: #fff;
+}
+
+.socbtn{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #d1190d;
+  margin: 5px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #000;
+}
+
+.socbtn i{
+  line-height: 50px;
+  font-size: 20px;
+  transition: 0.2s linear;
+}
+
+.socbtn:hover i{
+  transform: scale(1.2);
+  color: #c7bbba;
+}
+
+
