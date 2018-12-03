@@ -6688,3 +6688,14 @@ body > * {
   margin: 0!important;
 }
 
+.sponsor{
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+}
+.sponsor img {
+  margin: auto;
+  vertical-align: middle; 
+  display: inline-block;
+}  
