@@ -6703,3 +6703,17 @@ body > * {
 .btn-outline-light:hover{
   color:var(--secondary) !important;
 }
+
+.faq{
+  border-radius: 10px;
+  padding:10px;
+  background: white;
+  transition-property: background, color;
+  transition-duration: 500ms;
+
+}
+.faq:hover{
+  background-color: var(--primary);
+  color: white;
+
+}
