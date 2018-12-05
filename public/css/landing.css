@@ -6717,3 +6717,17 @@ body > * {
     font-size:15vw;
   }
 }
+
+.faq{
+  border-radius: 10px;
+  padding:10px;
+  background: white;
+  transition-property: background, color;
+  transition-duration: 500ms;
+
+}
+.faq:hover{
+  background-color: var(--primary);
+  color: white;
+
+}
