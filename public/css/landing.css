@@ -6702,4 +6702,18 @@ body > * {
 
 .btn-outline-light:hover{
   color:var(--secondary) !important;
+  
+}
+.tbn-outline-light{
+  margin-bottom: 10px !important;
+}
+
+.display-2{
+  font-size: 12vw !important;
+}
+
+@media screen and (max-width: 600px){
+  .display-2{
+    font-size:15vw;
+  }
 }
