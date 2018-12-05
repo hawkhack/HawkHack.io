@@ -61,9 +61,10 @@ html {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
+
 body {
   margin: 0;
-  font-family: Roboto;
+  font-family: sans-serif;
   font-size: 1rem;
   font-weight: 200;
   line-height: 1.5;
@@ -6679,6 +6680,7 @@ body > * {
   background-color: transparent !important;
 }
 
+
 .footcol2, .footcol3{
   text-align: center;
 }
@@ -6721,4 +6723,54 @@ body > * {
   color: #c7bbba;
 }
 
+.inner{
+  padding: 2rem;
+}
 
+.row{
+  margin: 0!important;
+}
+
+.sponsor{
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+}
+.sponsor img {
+  margin: auto;
+  vertical-align: middle; 
+  display: inline-block;
+}  
+
+.btn-outline-light:hover{
+  color:var(--secondary) !important;
+  
+}
+.tbn-outline-light{
+  margin-bottom: 10px !important;
+}
+
+.display-2{
+  font-size: 12vw !important;
+}
+
+@media screen and (max-width: 600px){
+  .display-2{
+    font-size:15vw;
+  }
+}
+
+.faq{
+  border-radius: 10px;
+  padding:10px;
+  background: white;
+  transition-property: background, color;
+  transition-duration: 500ms;
+
+}
+.faq:hover{
+  background-color: var(--primary);
+  color: white;
+
+}
