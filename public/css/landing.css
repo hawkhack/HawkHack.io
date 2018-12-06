@@ -6700,26 +6700,75 @@ body > * {
   color: #fff;
 }
 
-.socbtn{
+.fbbt{
   display: inline-block;
   width: 50px;
   height: 50px;
   background: #d1190d;
   margin: 5px;
+  vertical-align: middle;
   border-radius: 30%;
-  box-shadow: 0 5px 15px -5px #00000070;
   color: #000;
 }
 
-.socbtn i{
+.fbbt i{
   line-height: 50px;
-  font-size: 20px;
-  transition: 0.2s linear;
+  font-size: 30px;
+  transition-duration: 100ms;
 }
 
-.socbtn:hover i{
+.fbbt:hover i{
   transform: scale(1.2);
-  color: #c7bbba;
+  color: white;
+}
+
+.twbt{
+ display: inline-block;
+ width: 50px;
+ height: 50px;
+}
+
+.twbt i{
+  color: #1da1f2;
+  font-size: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  transition-duration: 50ms;
+}
+
+.twbt i:hover{
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+ color: var(--primary);
+ font-size: 53px;
+}
+
+.igbt{
+  margin:0px;
+  padding: 0px;
+  display: inline-block;
+  width: 42px;
+  height: 40px;
+  border-radius: 10px;
+  color: var(--primary);
+  padding: 0px;
+  transition: background 100ms linear, color 100ms linear;
+  
+}
+
+.igbt i{
+  font-size: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  margin: -6px;
+  width: 42px;
+}
+
+.igbt:hover{
+background:red;
+color: var(--secondary);
+color: white !important;
 }
 
 .inner{
@@ -6750,13 +6799,15 @@ body > * {
   margin-bottom: 10px !important;
 }
 
-.display-2{
-  font-size: 12vw !important;
+.herotitle{
+  /* text-align: center; */
+  font-size: 5em;
 }
 
 @media screen and (max-width: 600px){
-  .display-2{
-    font-size:15vw;
+  .herotitle{
+    font-size:15em;
+    /* text-align: center; */
   }
 }
 
@@ -6766,6 +6817,7 @@ body > * {
   background: white;
   transition-property: background, color;
   transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
 
 }
 .faq:hover{
