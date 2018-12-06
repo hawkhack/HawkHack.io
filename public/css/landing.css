@@ -6795,8 +6795,8 @@ color: white !important;
   color:var(--secondary) !important;
   
 }
-.tbn-outline-light{
-  margin-bottom: 10px !important;
+.btn-outline-light{
+  margin-bottom: .5em;
 }
 
 .herotitle{
@@ -6806,9 +6806,13 @@ color: white !important;
 
 @media screen and (max-width: 600px){
   .herotitle{
-    font-size:15em;
+    font-size:4em;
     /* text-align: center; */
   }
+}
+
+.faqcard{
+  height: 200px;
 }
 
 .faq{
@@ -6820,8 +6824,30 @@ color: white !important;
   transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
 
 }
-.faq:hover{
-  background-color: var(--primary);
-  color: white;
+.faq h3{
+  color: var(--primary);
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
 
 }
+.faq:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.faq:hover h3{
+  color:white;
+}
+
+.sectitle{
+  text-align: center;
+}
+
+.copyright *{
+  margin-top:10px;
+  margin-bottom: 0px;
+}
+
