@@ -6680,11 +6680,175 @@ body > * {
   background-color: transparent !important;
 }
 
+.footcol2, .footcol3{
+  text-align: center;
+}
+
+.footcol1 li{
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  background: #d1190d;
+  margin-right: 50px;
+  margin-top:5px;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 30px;
+}
+
+.footcol1 li a{
+  color: #fff;
+}
+
+.fbbt{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #d1190d;
+  margin: 5px;
+  vertical-align: middle;
+  border-radius: 30%;
+  color: #000;
+}
+
+.fbbt i{
+  line-height: 50px;
+  font-size: 30px;
+  transition-duration: 100ms;
+}
+
+.fbbt:hover i{
+  transform: scale(1.2);
+  color: white;
+}
+
+.twbt{
+ display: inline-block;
+ width: 50px;
+ height: 50px;
+}
+
+.twbt i{
+  color: #1da1f2;
+  font-size: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  transition-duration: 50ms;
+}
+
+.twbt i:hover{
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+ color: var(--primary);
+ font-size: 53px;
+}
+
+.igbt{
+  margin:0px;
+  padding: 0px;
+  display: inline-block;
+  width: 42px;
+  height: 40px;
+  border-radius: 10px;
+  color: var(--primary);
+  padding: 0px;
+  transition: background 100ms linear, color 100ms linear;
+  
+}
+
+.igbt i{
+  font-size: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  margin: -6px;
+  width: 42px;
+}
+
+.igbt:hover{
+background:red;
+color: var(--secondary);
+color: white !important;
+}
+
 .inner{
   padding: 2rem;
 }
 
 .row{
   margin: 0!important;
+}
+
+.sponsor{
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+}
+.sponsor img {
+  margin: auto;
+  vertical-align: middle; 
+  display: inline-block;
+}  
+
+.btn-outline-light:hover{
+  color:var(--secondary) !important;
+  
+}
+.btn-outline-light{
+  margin-bottom: .5em;
+}
+
+.herotitle{
+  /* text-align: center; */
+  font-size: 5em;
+}
+
+@media screen and (max-width: 600px){
+  .herotitle{
+    font-size:4em;
+    /* text-align: center; */
+  }
+}
+
+.faqcard{
+  height: 30%;
+  text-align: left;
+}
+
+.faq{
+  border-radius: 10px;
+  padding:10px;
+  background: white;
+  transition-property: background, color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+}
+.faq h3{
+  color: var(--primary);
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+}
+.faq:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.faq:hover h3{
+  color:white;
+}
+
+.sectitle{
+  text-align: center;
+}
+
+.copyright *{
+  margin-top:10px;
+  margin-bottom: 0px;
 }
 
