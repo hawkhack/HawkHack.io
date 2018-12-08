@@ -6772,7 +6772,7 @@ color: white !important;
 }
 
 .inner{
-  padding: 2rem;
+  padding: .50rem;
 }
 
 .row{
@@ -6806,7 +6806,7 @@ color: white !important;
 
 @media screen and (max-width: 600px){
   .herotitle{
-    font-size:4em;
+    font-size:3em;
     /* text-align: center; */
   }
 }
