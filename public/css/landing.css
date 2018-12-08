@@ -6812,7 +6812,8 @@ color: white !important;
 }
 
 .faqcard{
-  height: 200px;
+  height: 30%;
+  text-align: left;
 }
 
 .faq{
