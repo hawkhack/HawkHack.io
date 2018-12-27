@@ -7,18 +7,15 @@ var logger = require("morgan");
 const app = express();
 
 //routes
-var landing = require("./routes/landing");
-var contactRouter = require("./routes/contact");
+// var landing = require("./routes/landing");
+// var contactRouter = require("./routes/contact");
 
 //View engine setup
 app.set("views", path.join(__dirname, "views"));
 app.engine(
   "handlebars",
   exphbs({
-    extname: "handlebars",
-    defaultLayout: "main",
-    layoutsDir: __dirname + "/views/layouts/",
-    partialsDir: __dirname + "/views/partials/"
+    extname: "handlebars"
   })
 );
 app.set("view engine", "handlebars");
@@ -29,11 +26,15 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(__dirname + "/public"));
 
-app.use("/landing", landing);
-app.use("/contact", contactRouter);
+// app.use("/landing", landing);
+// app.use("/contact", contactRouter);
 
 app.get("/", function(req, res) {
-  res.sendFile(__dirname + "/views/landing.html");
+  res.sendFile("/views/landing.html", { root: __dirname });
+});
+
+app.get("/test", (req, res) => {
+  res.sendFile(__dirname + "/views/testing.html");
 });
 
 // catch 404 and forward to error handler

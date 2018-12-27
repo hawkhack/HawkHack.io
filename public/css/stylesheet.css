@@ -1,3 +1,6 @@
+:root{
+  --primary: #d1190d;
+}
 .d-flex {
   display: flex !important;
 }
@@ -30,4 +33,5 @@
 .selfContainer{
   max-width: 120em;
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
