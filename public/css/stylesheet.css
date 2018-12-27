@@ -1,0 +1,33 @@
+.d-flex {
+  display: flex !important;
+}
+.align-items-center {
+  align-items: center !important;
+}
+.section-aquamarine {
+  position: relative;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+.section-aquamarine:before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  background: linear-gradient(
+    to bottom right,
+    rgba(209, 25, 13, 0.9) 0%,
+    rgba(34, 31, 31, 0.9) 100%
+  );
+}
+.pt-5,
+.py-5 {
+  padding-top: 4.5rem !important;
+}
+.selfContainer{
+  max-width: 120em;
+  margin: 0 auto;
+}
