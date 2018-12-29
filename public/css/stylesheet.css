@@ -1,5 +1,7 @@
 :root{
   --primary: #d1190d;
+  --linear: rgba(209, 25, 13, 0.9);
+  --secondLinear: rgba(34, 31, 31, 0.9);
 }
 .d-flex {
   display: flex !important;
@@ -21,9 +23,9 @@
   height: 100%;
   content: " ";
   background: linear-gradient(
-    to bottom right,
-    rgba(209, 25, 13, 0.9) 0%,
-    rgba(34, 31, 31, 0.9) 100%
+          to bottom right,
+          rgba(209, 25, 13, 0.9) 0%,
+          rgba(34, 31, 31, 0.9) 100%
   );
 }
 .pt-5,
@@ -33,5 +35,175 @@
 .selfContainer{
   max-width: 120em;
   margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.img{
+  background-image: url("../images/msulanding.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:center ;
+  position: relative;
+}
+.card{
+  background-color: transparent !important;
+}
+.card .card-header{
+  background-color: transparent !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.card .card-header button{
+  padding: 0 !important;
+}
+.card .card-header h5 button{
+  color: var(--primary);
+  font-size:1.1em;
+}
+.icon1{
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+.icon2{
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+.icon3{
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+.icon4{
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+.icon5{
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+.icon6{
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+
+.button1{
+  text-decoration: none !important;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  text-align: left !important;
+}
+.button1:focus{
+  border: 0;
+  outline: 0;
+}
+.button2{
+  text-decoration: none !important;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  text-align: left !important;
+}
+.button2:focus{
+  border: 0;
+  outline: 0;
+}
+
+.button3{
+  text-decoration: none !important;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  text-align: left !important;
+}
+.button3:focus{
+  border: 0;
+  outline: 0;
+}
+
+.button4{
+  text-decoration: none !important;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  text-align: left !important;
+}
+.button4:focus{
+  border: 0;
+  outline: 0;
+}
+
+.button5{
+  text-decoration: none !important;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  text-align: left !important;
+}
+.button5:focus{
+  border: 0;
+  outline: 0;
+}
+
+.button6{
+  text-decoration: none !important;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  text-align: left !important;
+}
+.button6:focus{
+  border: 0;
+  outline: 0;
+}
+.linear{
+  /*background: linear-gradient(var(--linear) 0%, var(--secondLinear) 100%);*/
+  background-color: transparent;
+}
+.text-md-left iframe{
+  box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4);
+}
+.marginBottom{
   margin-bottom: 2rem;
 }
