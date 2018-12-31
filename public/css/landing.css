@@ -3126,6 +3126,7 @@ input[type="button"].btn-block {
   display: flex;
   flex-direction: column;
   min-width: 0;
+  margin-bottom: 1rem;
   word-wrap: break-word;
   background-color: #f3f3f3;
   background-clip: border-box;
@@ -3144,6 +3145,8 @@ input[type="button"].btn-block {
 .card-body {
   font-weight: 600;
   font-size: 18px;
+  background-color:lightblue ;
+  border-radius: 0rem 0rem 1rem 1rem;
 }
 .card-body p{
   margin: 0;
@@ -3167,7 +3170,6 @@ input[type="button"].btn-block {
 
 .card-header {
   padding: 0;
-  margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 0px solid rgba(0, 0, 0, 0.125);
 }

@@ -1,7 +1,8 @@
-:root{
+:root {
   --primary: #d1190d;
   --linear: rgba(209, 25, 13, 0.9);
   --secondLinear: rgba(34, 31, 31, 0.9);
+  --white: #ffffff;
 }
 .d-flex {
   display: flex !important;
@@ -23,44 +24,53 @@
   height: 100%;
   content: " ";
   background: linear-gradient(
-          to bottom right,
-          rgba(209, 25, 13, 0.9) 0%,
-          rgba(34, 31, 31, 0.9) 100%
+    to bottom right,
+    rgba(209, 25, 13, 0.9) 0%,
+    rgba(34, 31, 31, 0.9) 100%
   );
 }
 .pt-5,
 .py-5 {
   padding-top: 4.5rem !important;
 }
-.selfContainer{
+.selfContainer {
   max-width: 120em;
   margin: 0 auto;
   margin-bottom: 2rem;
 }
-.img{
+.img {
   background-image: url("../images/msulanding.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position:center ;
+  background-position: center;
   position: relative;
 }
-.card{
+.card {
   background-color: transparent !important;
 }
-.card .card-header{
+.card .card-header {
   background-color: transparent !important;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
-.card .card-header button{
-  padding: 0 !important;
+.card .card-header button {
+  padding: 0.5rem !important;
+  border-radius: 2rem;
 }
-.card .card-header h5 button{
-  color: var(--primary);
-  font-size:1.1em;
+
+.activeBtn {
+  border-radius: 1rem 1rem 0rem 0rem !important;
 }
-.icon1{
+
+.card .card-header h5 {
+  margin: 0;
+}
+.card .card-header h5 button {
+  color: var(--white);
+  background-color: var(--primary);
+  font-size: 1.1em;
+  text-align: center !important;
+}
+.icon1 {
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
@@ -70,7 +80,7 @@
   -o-transition-property: -o-transform;
   transition-property: transform;
 }
-.icon2{
+.icon2 {
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
@@ -80,7 +90,7 @@
   -o-transition-property: -o-transform;
   transition-property: transform;
 }
-.icon3{
+.icon3 {
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
@@ -90,7 +100,7 @@
   -o-transition-property: -o-transform;
   transition-property: transform;
 }
-.icon4{
+.icon4 {
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
@@ -100,7 +110,7 @@
   -o-transition-property: -o-transform;
   transition-property: transform;
 }
-.icon5{
+.icon5 {
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
@@ -110,7 +120,7 @@
   -o-transition-property: -o-transform;
   transition-property: transform;
 }
-.icon6{
+.icon6 {
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
@@ -121,7 +131,7 @@
   transition-property: transform;
 }
 
-.button1{
+.button {
   text-decoration: none !important;
   border: 0;
   background-color: transparent;
@@ -129,24 +139,13 @@
   width: 100%;
   text-align: left !important;
 }
-.button1:focus{
-  border: 0;
-  outline: 0;
-}
-.button2{
-  text-decoration: none !important;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
-  width: 100%;
-  text-align: left !important;
-}
-.button2:focus{
+
+.button:focus {
   border: 0;
   outline: 0;
 }
 
-.button3{
+.button1 {
   text-decoration: none !important;
   border: 0;
   background-color: transparent;
@@ -154,12 +153,24 @@
   width: 100%;
   text-align: left !important;
 }
-.button3:focus{
+.button1:focus {
+  border: 0;
+  outline: 0;
+}
+.button2 {
+  text-decoration: none !important;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  text-align: left !important;
+}
+.button2:focus {
   border: 0;
   outline: 0;
 }
 
-.button4{
+.button3 {
   text-decoration: none !important;
   border: 0;
   background-color: transparent;
@@ -167,12 +178,12 @@
   width: 100%;
   text-align: left !important;
 }
-.button4:focus{
+.button3:focus {
   border: 0;
   outline: 0;
 }
 
-.button5{
+.button4 {
   text-decoration: none !important;
   border: 0;
   background-color: transparent;
@@ -180,12 +191,12 @@
   width: 100%;
   text-align: left !important;
 }
-.button5:focus{
+.button4:focus {
   border: 0;
   outline: 0;
 }
 
-.button6{
+.button5 {
   text-decoration: none !important;
   border: 0;
   background-color: transparent;
@@ -193,17 +204,30 @@
   width: 100%;
   text-align: left !important;
 }
-.button6:focus{
+.button5:focus {
   border: 0;
   outline: 0;
 }
-.linear{
+
+.button6 {
+  text-decoration: none !important;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  text-align: left !important;
+}
+.button6:focus {
+  border: 0;
+  outline: 0;
+}
+.linear {
   /*background: linear-gradient(var(--linear) 0%, var(--secondLinear) 100%);*/
   background-color: transparent;
 }
-.text-md-left iframe{
+.text-md-left iframe {
   box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4);
 }
-.marginBottom{
+.marginBottom {
   margin-bottom: 2rem;
 }
