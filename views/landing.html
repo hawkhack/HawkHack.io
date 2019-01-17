@@ -32,19 +32,18 @@
     />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     />
+
     <link rel="stylesheet" href="css/landing.css" type="text/css" />
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
   </head>
   <body>
     <container class="text-center">
       <!-- Cover -->
       <div
-        class="d-flex align-items-center section-aquamarine py-5 cover"
+        class="d-flex align-items-center section-aquamarine py-5 img cover"
         id="hero"
-        style="background-image: url(images/hero.jpg);"
       >
         <div class="container">
           <div class="row">
@@ -66,15 +65,12 @@
                   href="https://my.mlh.io/oauth/authorize?client_id=ea5775c879a6e062b5a49483220810ad41e7276c90ecc6a4cdd638820bf10beb&redirect_uri=http://www.hawkhack.net/&response_type=token"
                   >Register</a
                 >
-                <a
-                  class="btn btn-lg btn-outline-light"
-                  style="display:none;"
-                  id="ContactUsBtn"
+                <a class="btn btn-lg btn-outline-light" id="ContactUsBtn"
                   >Contact Us</a
                 >
               </div>
               <form
-                action="/landing/contact"
+                action="/contact"
                 id="contactform"
                 method="POST"
                 role="form"
@@ -147,290 +143,444 @@
           </div>
         </div>
       </div>
-      <!-- About -->
-      <!--
-        <div class="py-5 section-parallax" style="background-image: url(images/msulanding.jpg);" id="about">
-          <div class="container" style="background-color:#f3f3f3; padding:2rem;">
-            <h1>Location</h1>
-            <br />
-            <div class="row mx-auto">
-              <div class="col-md-12" style="height: 20em;">
-                <iframe frameborder="0" width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA85Zqc7_wokRxw6E4CIJnB4&key=AIzaSyB4FZgCk09zSlEACZ5epM4h02W65vLjBDw"></iframe>
+      <div class="linear">
+        <div class="">
+          <div class="background">
+            <div class="row" id="AboutUs">
+              <div class="col-md-12 sectitle">
+                <div class="inner">
+                  <h1>
+                    <img
+                      src="https://img.icons8.com/clouds/96/000000/about.png"
+                    />&nbsp; About Us
+                  </h1>
+                </div>
               </div>
-              <div class="col-md-12">
-                <a href="#schedule" class="btn btn-outline-primary btn-lg m-2">Schedule</a>
-                <a class="btn btn-primary btn-lg m-2" href="http://eepurl.com/dOOzHL" target="_blank">Pre-Register</a>
+              <div class="col-md-12 text-md-left">
+                <div class="">
+                  <h2>
+                    <img
+                      src="https://img.icons8.com/color/64/000000/identity-theft.png"
+                    />&nbsp; Who We Are
+                  </h2>
+                  <p>
+                    HawkHack is a 24-hour hackathon at Montclair State
+                    University. We welcome hundreds of students to join us in
+                    building awesome software and hardware projects. Industry
+                    experts and mentors come from all over the country to create
+                    an environment that fosters an atmosphere of learning
+                    through tech talks and one-on-one guidance. We encourage
+                    beginner and advanced hackers alike to challenge themselves
+                    and expand their skills.
+                  </p>
+                  <div class="row">
+                    <div class="col-md-3 text-center marginBottom">
+                      <img
+                        src="https://img.icons8.com/dusk/64/000000/web-design.png"
+                      />
+                      <br />
+                      <h4>WEB DEV</h4>
+                    </div>
+                    <div class="col-md-3 text-center marginBottom">
+                      <img
+                        src="https://img.icons8.com/dusk/64/000000/two-smartphones.png"
+                      />
+                      <br />
+                      <h4>MOBILE DEV</h4>
+                    </div>
+                    <div class="col-md-3 text-center marginBottom">
+                      <img
+                        src="https://img.icons8.com/dusk/64/000000/workstation.png"
+                      />
+                      <br />
+                      <h4>HARDWARE</h4>
+                    </div>
+                    <div class="col-md-3 text-center marginBottom">
+                      <img
+                        src="https://img.icons8.com/dusk/64/000000/paint-brush.png"
+                      />
+                      <br />
+                      <h4>DESIGN</h4>
+                    </div>
+                    <div class="col-md-3 text-center marginBottom">
+                      <img
+                        src="https://img.icons8.com/dusk/64/000000/hips.png"
+                      />
+                      <br />
+                      <h4>CYBERSECURITY</h4>
+                    </div>
+                    <div class="col-md-3 text-center marginBottom">
+                      <img
+                        src="https://img.icons8.com/dusk/64/000000/artificial-intelligence.png"
+                      />
+                      <br />
+                      <h4>AI</h4>
+                    </div>
+                    <div class="col-md-3 text-center marginBottom">
+                      <img
+                        src="https://img.icons8.com/dusk/64/000000/blockchain.png"
+                      />
+                      <br />
+                      <h4>BLOCKCHAIN</h4>
+                    </div>
+                    <div class="col-md-3 text-center marginBottom">
+                      <img
+                        src="https://img.icons8.com/dusk/64/000000/3d-printer.png"
+                      />
+                      <br />
+                      <h4>3D PRINTING</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- MAP -->
+              <div class="col-md-12 text-md-left" style="margin-top: 2rem;">
+                <div class="">
+                  <h2>
+                    <img
+                      src="https://img.icons8.com/cotton/64/000000/marker.png"
+                    />&nbsp; Where are we located?
+                  </h2>
+                  <iframe
+                    frameborder="0"
+                    width="100%"
+                    height="350px"
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA85Zqc7_wokRxw6E4CIJnB4&key=AIzaSyB4FZgCk09zSlEACZ5epM4h02W65vLjBDw"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      -->
-      <div class="background">
-        <div class="row" id="AboutUs">
-          <div class="col-md-12 sectitle">
-            <div class="inner">
-              <h1><i class="fas fa-person-booth"></i>&nbsp; About Us</h1>
-              <hr style="border-top: 2px solid navajowhite; width:15%;" />
-            </div>
-          </div>
-          <div class="col-md-7 text-md-left">
-            <div class="inner">
-              <h2><i class="far fa-address-card"></i>&nbsp; Who We Are</h2>
-              <p>
-                HawkHack is a 24-hour hackathon at Montclair State University.
-                We welcome hundreds of students to join us in building awesome
-                software and hardware projects. Industry experts and mentors
-                come from all over the country to create an environment that
-                fosters an atmosphere of learning through tech talks and
-                one-on-one guidance. We encourage beginner and advanced hackers
-                alike to challenge themselves and expand their skills.
-              </p>
+        <!-- FAQ Section -->
+        <div class="tab-content" id="faq-tab-content" style="margin-top: 2rem;">
+          <h1>
+            <img
+              src="https://img.icons8.com/dusk/64/000000/question-mark.png"
+            />
+            FAQ?!
+          </h1>
+          <div
+            class="tab-pane show active"
+            id="tab1"
+            role="tabpanel"
+            aria-labelledby="tab1"
+          >
+            <div class="accordion" id="accordion-tab-1">
               <div class="row">
-                <div class="col-md-3 text-center">
-                  <i class="fas fa-mouse-pointer fa-2x"></i> <br />
-                  <h4>WEB DEV</h4>
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="card-header " id="accordion-tab-1-heading-1">
+                      <h5>
+                        <button
+                          class="button activeBtn"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#accordion-tab-1-content-1"
+                          aria-expanded="false"
+                          aria-controls="accordion-tab-1-content-1"
+                          id="btn1"
+                        >
+                          WHAT IS A HACKATHON?
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      class="collapse show"
+                      id="accordion-tab-1-content-1"
+                      aria-labelledby="accordion-tab-1-heading-1"
+                      data-parent="#accordion-tab-1"
+                    >
+                      <div class="card-body">
+                        <p>
+                          Hackathon is an intense event that brings together
+                          computer programmers like software developers, graphic
+                          designers and user interface specialists along with
+                          industry process experts and professionals to identify
+                          issues and create software solutions, usually within a
+                          weekend.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="accordion-tab-1-heading-2">
+                      <h5>
+                        <button
+                          class="button"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#accordion-tab-1-content-2"
+                          aria-expanded="false"
+                          aria-controls="accordion-tab-1-content-2"
+                        >
+                          I'M NEW, WHAT SHOULD I DO?
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      class="collapse"
+                      id="accordion-tab-1-content-2"
+                      aria-labelledby="accordion-tab-1-heading-2"
+                      data-parent="#accordion-tab-1"
+                    >
+                      <div class="card-body">
+                        <p>
+                          That's great! We'd love to have you at HawkHack.
+                          Throughout the weekend there will be workshops for you
+                          to get your feet wet, project ideas for you to try
+                          out, and mentors to guide you through the process.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="accordion-tab-1-heading-3">
+                      <h5>
+                        <button
+                          class="button"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#accordion-tab-1-content-3"
+                          aria-expanded="false"
+                          aria-controls="accordion-tab-1-content-3"
+                        >
+                          WHO CAN COME?
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      class="collapse"
+                      id="accordion-tab-1-content-3"
+                      aria-labelledby="accordion-tab-1-heading-3"
+                      data-parent="#accordion-tab-1"
+                    >
+                      <div class="card-body">
+                        <p>
+                          HawkHack welcomes undergraduate and graduate students
+                          of all majors, backgrounds, and skill levels to come
+                          create.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-3 text-center">
-                  <i class="fas fa-mobile-alt fa-2x"></i> <br />
-                  <h4>MOBILE DEV</h4>
-                </div>
-                <div class="col-md-3 text-center">
-                  <i class="fas fa-microchip fa-2x"></i> <br />
-                  <h4>HARDWARE</h4>
-                </div>
-                <div class="col-md-3 text-center">
-                  <i class="fas fa-paint-brush fa-2x"></i> <br />
-                  <h4>DESIGN</h4>
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="card-header" id="accordion-tab-1-heading-4">
+                      <h5>
+                        <button
+                          class="button"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#accordion-tab-1-content-4"
+                          aria-expanded="false"
+                          aria-controls="accordion-tab-1-content-4"
+                        >
+                          CAN I WIN ANYTHING?
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      class="collapse"
+                      id="accordion-tab-1-content-4"
+                      aria-labelledby="accordion-tab-1-heading-4"
+                      data-parent="#accordion-tab-1"
+                    >
+                      <div class="card-body">
+                        <p>
+                          Yes! We'll release more information about prizes as
+                          the event draws near.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="accordion-tab-1-heading-5">
+                      <h5>
+                        <button
+                          class="button"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#accordion-tab-1-content-5"
+                          aria-expanded="false"
+                          aria-controls="accordion-tab-1-content-5"
+                        >
+                          WHAT IS THE GOAL OF THE HACKATHON?
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      class="collapse"
+                      id="accordion-tab-1-content-5"
+                      aria-labelledby="accordion-tab-1-heading-5"
+                      data-parent="#accordion-tab-1"
+                    >
+                      <div class="card-body">
+                        <p>
+                          We want to create an environment that embraces new
+                          ideas and technology solutions for the AEC Industry. A
+                          place where technology designers and developers can
+                          come to help the industry.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="accordion-tab-1-heading-6">
+                      <h5>
+                        <button
+                          class="button"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#accordion-tab-1-content-6"
+                          aria-expanded="false"
+                          aria-controls="accordion-tab-1-content-6"
+                        >
+                          HOW MUCH DOES IT COST TO ATTEND?
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      class="collapse"
+                      id="accordion-tab-1-content-6"
+                      aria-labelledby="accordion-tab-1-heading-6"
+                      data-parent="#accordion-tab-1"
+                    >
+                      <div class="card-body">
+                        <p>
+                          Like the best things in life, HawkHack is completely
+                          free to attend! We will be providing meals, snacks,
+                          and drinks for the entire event along with swag on
+                          swag on swag.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- MAP -->
-          <div class="col-md-5 text-md-left">
-            <div class="inner">
-              <h2>
-                <i class="fas fa-plane-arrival"></i>&nbsp; Where are we located?
-              </h2>
-              <iframe
-                frameborder="0"
-                width="100%"
-                height="200px"
-                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA85Zqc7_wokRxw6E4CIJnB4&key=AIzaSyB4FZgCk09zSlEACZ5epM4h02W65vLjBDw"
-              ></iframe>
             </div>
           </div>
         </div>
       </div>
-      <!-- FAQ Section -->
-      <div id="FAQ">
-        <div class="row">
-          <div class="col-md-12 sectitle">
-            <div class="inner">
-              <h1><i class="fas fa-question"></i>&nbsp; FAQs</h1>
-              <hr style="border-top: 2px solid navajowhite; width:15%;" />
-            </div>
-          </div>
-        </div>
-        <!-- FAQ Column -->
-        <div class="col-md-12">
-          <!-- FAQ ROW 1 -->
-          <div class="inner">
-            <div class="row justify-content-around">
-              <div class="faqcard col-sm-5">
-                <div class="faq">
-                  <h3>WHAT IS A HACKATHON?</h3>
-                  <p>
-                    Hackathon is an intense event that brings together computer
-                    programmers like software developers, graphic designers and
-                    user interface specialists along with industry process
-                    experts and professionals to identify issues and create
-                    software solutions, usually within a weekend.
-                  </p>
-                </div>
-              </div>
-              <div class="faqcard col-sm-5">
-                <div class="faq">
-                  <h3>I'M NEW, WHAT SHOULD I DO?</h3>
-                  <p>
-                    That's great! We'd love to have you at HawkHack. Throughout
-                    the weekend there will be workshops for you to get your feet
-                    wet, project ideas for you to try out, and mentors to guide
-                    you through the process.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- FAQ ROW 2 -->
-          <div class="inner">
-            <div class="row justify-content-around">
-              <div class="faqcard col-sm-5">
-                <div class="faq">
-                  <h3>WHAT IS THE GOAL OF THE HACKATHON?</h3>
-                  <p>
-                    We want to create an environment that embraces new ideas and
-                    technology solutions for the AEC Industry. A place where
-                    technology designers and developers can come to help the
-                    industry.
-                  </p>
-                </div>
-              </div>
-              <div class="faqcard col-sm-5">
-                <div class="faq">
-                  <h3>HOW MUCH DOES IT COST TO ATTEND?</h3>
-                  <p>
-                    Like the best things in life, HawkHack is completely free to
-                    attend! We will be providing meals, snacks, and drinks for
-                    the entire event along with swag on swag on swag.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- FAQ ROW 3 -->
-          <div class="inner">
-            <div class="row justify-content-around">
-              <div class="faqcard col-sm-5">
-                <div class="faq">
-                  <h3>WHO CAN COME?</h3>
-                  <p>
-                    HawkHack welcomes undergraduate and graduate students of all
-                    majors, backgrounds, and skill levels to come create.
-                  </p>
-                </div>
-              </div>
-              <div class="faqcard col-sm-5">
-                <div class="faq">
-                  <h3>CAN I WIN ANYTHING?</h3>
-                  <p>
-                    Yes! We'll release more information about prizes as the
-                    event draws near.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- Schedule -->
-      <div
-        class="py-5 section-parallax"
-        style="background-image: url(images/schedule.jpg); display: none;"
-        id="schedule"
-      >
-        <div class="container section-aquamarine">
-          <div class="row">
-            <div class="col-md-12">
-              <h1 class="text-white mt-4">Schedule</h1>
-            </div>
-          </div>
-          <div class="row text-left text-dark">
-            <div class="p-4 col-lg-4 col-md-6">
-              <div class="card">
-                <div class="card-block text-center card-primary p-2">
-                  <h2>Day 1</h2>
-                  <p class="lead">Start</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    <i class="mx-auto fa d-inline fa-clock-o text-primary"></i
-                    >09:30-10:00 –<b>Welcome</b>
-                  </li>
-                  <li class="list-group-item">
-                    <i class="mx-auto fa d-inline fa-clock-o text-primary"></i
-                    >10:00-12:00 –<b>To</b>
-                  </li>
-                  <li class="list-group-item">
-                    <i class="mx-auto fa d-inline fa-clock-o text-primary"></i
-                    >12:00-13:00 –<b>My</b>
-                  </li>
-                  <li class="list-group-item bg-info">
-                    <i class="mx-auto fa d-inline fa-clock-o text-primary"></i
-                    >13:00-14:30 –<b>Day</b>
-                  </li>
-                  <li class="list-group-item">
-                    <i class="mx-auto fa d-inline fa-clock-o text-primary"></i
-                    >14:30-16:00 –<b>One</b>
-                  </li>
-                  <li class="list-group-item">
-                    <i class="mx-auto fa d-inline fa-clock-o text-primary"></i
-                    >16:00-18:00 –<b>Two</b>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="p-4 col-lg-4 col-md-6">
-              <div class="card">
-                <div class="card-block text-center card-primary p-2">
-                  <h2>Day 2</h2>
-                  <p class="lead">Middle</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    <i class="mx-auto fa d-inline fa-clock-o text-primary"></i
-                    >09:30-10:00 –<b>Welcome</b>
-                  </li>
-                  <li class="list-group-item">
-                    <i class="mx-auto fa d-inline fa-clock-o text-primary"></i
-                    >10:00-12:00 –<b>To</b>
-                  </li>
-                  <li class="list-group-item">
-                    <i class="mx-auto fa d-inline fa-clock-o text-primary"></i
-                    >12:00-13:00 –<b>My</b>
-                  </li>
-                  <li class="list-group-item bg-info">
-                    <i class="mx-auto fa d-inline fa-clock-o text-primary"></i
-                    >13:00-14:30 –<b>Day</b>
-                  </li>
-                  <li class="list-group-item">
-                    <i class="mx-auto fa d-inline fa-clock-o text-primary"></i
-                    >14:30-16:00 –<b>One</b>
-                  </li>
-                  <li class="list-group-item">
-                    <i class="mx-auto fa d-inline fa-clock-o text-primary"></i
-                    >16:00-18:00 –<b>Two</b>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="p-4 col-lg-4">
-              <div class="card text-dark">
-                <div class="card-block text-center p-2">
-                  <h2>Day 3</h2>
-                  <p class="lead">End</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    <i class="mx-auto fa d-inline fa-clock-o text-primary"></i
-                    >09:30-10:00 –<b>Welcome</b>
-                  </li>
-                  <li class="list-group-item">
-                    <i class="mx-auto fa d-inline fa-clock-o text-primary"></i
-                    >10:00-12:00 –<b>To</b>
-                  </li>
-                  <li class="list-group-item">
-                    <i class="mx-auto fa d-inline fa-clock-o text-primary"></i
-                    >12:00-13:00 –<b>My</b>
-                  </li>
-                  <li class="list-group-item bg-info">
-                    <i class="mx-auto fa d-inline fa-clock-o text-primary"></i
-                    >13:00-14:30 –<b>Day</b>
-                  </li>
-                  <li class="list-group-item">
-                    <i class="mx-auto fa d-inline fa-clock-o text-primary"></i
-                    >14:30-16:00 –<b>One</b>
-                  </li>
-                  <li class="list-group-item">
-                    <i class="mx-auto fa d-inline fa-clock-o text-primary"></i
-                    >16:00-18:00 –<b>Two</b>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!--<div-->
+      <!--class="py-5 section-parallax"-->
+      <!--style="background-image: url(images/schedule.jpg); display: none;"-->
+      <!--id="schedule"-->
+      <!--&gt;-->
+      <!--<div class="container section-aquamarine">-->
+      <!--<div class="row">-->
+      <!--<div class="col-md-12">-->
+      <!--<h1 class="text-white mt-4">Schedule</h1>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<div class="row text-left text-dark">-->
+      <!--<div class="p-4 col-lg-4 col-md-6">-->
+      <!--<div class="card">-->
+      <!--<div class="card-block text-center card-primary p-2">-->
+      <!--<h2>Day 1</h2>-->
+      <!--<p class="lead">Start</p>-->
+      <!--</div>-->
+      <!--<ul class="list-group list-group-flush">-->
+      <!--<li class="list-group-item">-->
+      <!--<i class="mx-auto fa d-inline fa-clock-o text-primary"></i-->
+      <!--&gt;09:30-10:00 –<b>Welcome</b>-->
+      <!--</li>-->
+      <!--<li class="list-group-item">-->
+      <!--<i class="mx-auto fa d-inline fa-clock-o text-primary"></i-->
+      <!--&gt;10:00-12:00 –<b>To</b>-->
+      <!--</li>-->
+      <!--<li class="list-group-item">-->
+      <!--<i class="mx-auto fa d-inline fa-clock-o text-primary"></i-->
+      <!--&gt;12:00-13:00 –<b>My</b>-->
+      <!--</li>-->
+      <!--<li class="list-group-item bg-info">-->
+      <!--<i class="mx-auto fa d-inline fa-clock-o text-primary"></i-->
+      <!--&gt;13:00-14:30 –<b>Day</b>-->
+      <!--</li>-->
+      <!--<li class="list-group-item">-->
+      <!--<i class="mx-auto fa d-inline fa-clock-o text-primary"></i-->
+      <!--&gt;14:30-16:00 –<b>One</b>-->
+      <!--</li>-->
+      <!--<li class="list-group-item">-->
+      <!--<i class="mx-auto fa d-inline fa-clock-o text-primary"></i-->
+      <!--&gt;16:00-18:00 –<b>Two</b>-->
+      <!--</li>-->
+      <!--</ul>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<div class="p-4 col-lg-4 col-md-6">-->
+      <!--<div class="card">-->
+      <!--<div class="card-block text-center card-primary p-2">-->
+      <!--<h2>Day 2</h2>-->
+      <!--<p class="lead">Middle</p>-->
+      <!--</div>-->
+      <!--<ul class="list-group list-group-flush">-->
+      <!--<li class="list-group-item">-->
+      <!--<i class="mx-auto fa d-inline fa-clock-o text-primary"></i-->
+      <!--&gt;09:30-10:00 –<b>Welcome</b>-->
+      <!--</li>-->
+      <!--<li class="list-group-item">-->
+      <!--<i class="mx-auto fa d-inline fa-clock-o text-primary"></i-->
+      <!--&gt;10:00-12:00 –<b>To</b>-->
+      <!--</li>-->
+      <!--<li class="list-group-item">-->
+      <!--<i class="mx-auto fa d-inline fa-clock-o text-primary"></i-->
+      <!--&gt;12:00-13:00 –<b>My</b>-->
+      <!--</li>-->
+      <!--<li class="list-group-item bg-info">-->
+      <!--<i class="mx-auto fa d-inline fa-clock-o text-primary"></i-->
+      <!--&gt;13:00-14:30 –<b>Day</b>-->
+      <!--</li>-->
+      <!--<li class="list-group-item">-->
+      <!--<i class="mx-auto fa d-inline fa-clock-o text-primary"></i-->
+      <!--&gt;14:30-16:00 –<b>One</b>-->
+      <!--</li>-->
+      <!--<li class="list-group-item">-->
+      <!--<i class="mx-auto fa d-inline fa-clock-o text-primary"></i-->
+      <!--&gt;16:00-18:00 –<b>Two</b>-->
+      <!--</li>-->
+      <!--</ul>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<div class="p-4 col-lg-4">-->
+      <!--<div class="card text-dark">-->
+      <!--<div class="card-block text-center p-2">-->
+      <!--<h2>Day 3</h2>-->
+      <!--<p class="lead">End</p>-->
+      <!--</div>-->
+      <!--<ul class="list-group list-group-flush">-->
+      <!--<li class="list-group-item">-->
+      <!--<i class="mx-auto fa d-inline fa-clock-o text-primary"></i-->
+      <!--&gt;09:30-10:00 –<b>Welcome</b>-->
+      <!--</li>-->
+      <!--<li class="list-group-item">-->
+      <!--<i class="mx-auto fa d-inline fa-clock-o text-primary"></i-->
+      <!--&gt;10:00-12:00 –<b>To</b>-->
+      <!--</li>-->
+      <!--<li class="list-group-item">-->
+      <!--<i class="mx-auto fa d-inline fa-clock-o text-primary"></i-->
+      <!--&gt;12:00-13:00 –<b>My</b>-->
+      <!--</li>-->
+      <!--<li class="list-group-item bg-info">-->
+      <!--<i class="mx-auto fa d-inline fa-clock-o text-primary"></i-->
+      <!--&gt;13:00-14:30 –<b>Day</b>-->
+      <!--</li>-->
+      <!--<li class="list-group-item">-->
+      <!--<i class="mx-auto fa d-inline fa-clock-o text-primary"></i-->
+      <!--&gt;14:30-16:00 –<b>One</b>-->
+      <!--</li>-->
+      <!--<li class="list-group-item">-->
+      <!--<i class="mx-auto fa d-inline fa-clock-o text-primary"></i-->
+      <!--&gt;16:00-18:00 –<b>Two</b>-->
+      <!--</li>-->
+      <!--</ul>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
       <!-- Sponsor logos -->
       <div class="py-5 section bg-faded bg-light" id="sponsors">
         <div>
