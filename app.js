@@ -4,11 +4,10 @@ const exphbs = require("express-handlebars");
 const path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
+var nodemailer = require("nodemailer");
+var accountEmail = "contactrami98@gmail.com";
+var accountPassowrd = "Hassan111";
 const app = express();
-
-//routes
-// var landing = require("./routes/landing");
-// var contactRouter = require("./routes/contact");
 
 //View engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -26,20 +25,52 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(__dirname + "/public"));
 
-// app.use("/landing", landing);
-// app.use("/contact", contactRouter);
+// catch 404 and forward to error handler
+// app.use(function(req, res, next) {
+//   next(createError(404));
+// });
 
 app.get("/", function(req, res) {
   res.sendFile("/views/landing.html", { root: __dirname });
 });
 
-app.get("/test", (req, res) => {
-  res.sendFile(__dirname + "/views/testing.html");
-});
+app.post("/contact", (req, res) => {
+  const transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
+    auth: {
+      user: accountEmail,
+      pass: accountPassowrd
+    }
+  });
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
+  const mailOptions = {
+    from: req.body.email,
+    to: accountEmail,
+    subject: req.body.subject,
+    html:
+      "<h3>New Email from: " +
+      req.body.email +
+      "</h3> <h3>Subject: " +
+      req.body.subject +
+      "</h3> Message:  <br />" +
+      req.body.message
+  };
+
+  transporter.sendMail(mailOptions, (err, req, res) => {
+    if (err) {
+      console.log(err);
+      res.sendStatus(500);
+    } else {
+      console.log("mail sent");
+      res.sendStatus(200);
+      req.body.name = "";
+      req.body.email = "";
+      req.body.subject = "";
+      req.body.message = "";
+    }
+  });
 });
 
 // error handler
