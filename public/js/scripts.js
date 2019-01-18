@@ -9,71 +9,23 @@ $(function() {
     //use a class, since your ID gets mangled
     $("#contactform").removeClass("active"); //add the class to the clicked element
   });
-});
-
-$(".button1").click(function() {
-  if ($(".icon1").css("transform") == "none") {
-    $(".icon1").css("transform", "rotate(180deg)");
-  } else {
-    $(".icon1").css("transform", "");
-  }
-});
-
-$(".button2").click(function() {
-  if ($(".icon2").css("transform") == "none") {
-    $(".icon2").css("transform", "rotate(180deg)");
-  } else {
-    $(".icon2").css("transform", "");
-  }
-});
-
-$(".button3").click(function() {
-  if ($(".icon3").css("transform") == "none") {
-    $(".icon3").css("transform", "rotate(180deg)");
-  } else {
-    $(".icon3").css("transform", "");
-  }
-});
-
-$(".button4").click(function() {
-  if ($(".icon4").css("transform") == "none") {
-    $(".icon4").css("transform", "rotate(180deg)");
-  } else {
-    $(".icon4").css("transform", "");
-  }
-});
-
-$(".button5").click(function() {
-  if ($(".icon5").css("transform") == "none") {
-    $(".icon5").css("transform", "rotate(180deg)");
-  } else {
-    $(".icon5").css("transform", "");
-  }
-});
-
-$(".button6").click(function() {
-  if ($(".icon6").css("transform") == "none") {
-    $(".icon6").css("transform", "rotate(180deg)");
-  } else {
-    $(".icon6").css("transform", "");
-  }
+  
+  toggleItem(".button");
 });
 
 function toggleItem(elem) {
-  for (var i = 0; i < elem.length; i++) {
-    elem[i].addEventListener("click", function(e) {
-      var current = this;
-      for (var i = 0; i < elem.length; i++) {
-        if (current != elem[i]) {
-          elem[i].classList.remove("activeBtn");
-        } else if (current.classList.contains("activeBtn") === true) {
-          current.classList.remove("activeBtn");
-        } else {
-          current.classList.add("activeBtn");
-        }
-      }
-      e.preventDefault();
-    });
-  }
+	$(elem).each(function(){
+		$(this).on("click", function(){
+			var myTarget = $(this).attr("data-target");
+			$(elem).each(function(){
+				var yourTarget = $(this).attr("data-target");
+				if(myTarget !== yourTarget)
+					$(this).removeClass("activeBtn", 300, "easeInBack" );
+			});
+			
+			$(this).toggleClass("activeBtn");
+		});
+	});
+
 }
-toggleItem(document.querySelectorAll(".button"));
+
