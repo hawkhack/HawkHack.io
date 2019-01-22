@@ -6705,75 +6705,34 @@ body > * {
   color: #fff;
 }
 
-.fbbt{
+.socbt{
+  box-sizing:border-box;
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  background: #d1190d;
-  margin: 5px;
-  vertical-align: middle;
-  border-radius: 30%;
-  color: #000;
+  width: 48px;
+  height: 48px;
+  border-style: solid;
+  border-color: var(--primary);
+  border-width: 2px;
+  background: black;
+  transition-duration: 250ms;
 }
 
-.fbbt i{
-  line-height: 50px;
+.socbt i{
+  text-align:center;
+  color: var(--primary);
   font-size: 30px;
-  transition-duration: 100ms;
-}
-
-.fbbt:hover i{
-  transform: scale(1.2);
-  color: white;
-}
-
-.twbt{
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-}
-
-.twbt i{
-  color: #1da1f2;
-  font-size: 50px;
-  line-height: 50px;
+  line-height: 44px;
   vertical-align: middle;
-  transition-duration: 50ms;
-}
-
-.twbt i:hover{
-  -ms-transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-  color: var(--primary);
-  font-size: 53px;
-}
-
-.igbt{
-  margin:0px;
-  padding: 0px;
-  display: inline-block;
-  width: 42px;
-  height: 40px;
-  border-radius: 10px;
-  color: var(--primary);
-  padding: 0px;
-  transition: background 100ms linear, color 100ms linear;
+  transition-duration: 250ms;
 
 }
 
-.igbt i{
-  font-size: 50px;
-  line-height: 50px;
-  vertical-align: middle;
-  margin: -6px;
-  width: 42px;
+.socbt:hover{
+  background: var(--primary);
 }
 
-.igbt:hover{
-  background:red;
-  color: var(--secondary);
-  color: white !important;
+.socbt:hover > i{
+  color:black;
 }
 
 .inner{
