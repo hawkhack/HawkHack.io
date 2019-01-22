@@ -24,5 +24,8 @@
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^1.0.0",
     "popup-tools": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
   }
 }
