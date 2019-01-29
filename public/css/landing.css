@@ -3128,7 +3128,6 @@ input[type="button"].btn-block {
   min-width: 0;
   margin-bottom: 1rem;
   word-wrap: break-word;
-  background-color: #f3f3f3;
   background-clip: border-box;
   border: 0px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem; }
@@ -3141,17 +3140,6 @@ input[type="button"].btn-block {
 .card > .list-group:last-child .list-group-item:last-child {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem; }
-
-.card-body {
-  font-weight: 600;
-  font-size: 18px;
-  background-color:var(--dark);
-  border-radius: 0rem 0rem 1rem 1rem;
-  color: var(--white);
-}
-.card-body p{
-  margin: 0;
-}
 
 .card-title {
   margin-bottom: 0.75rem; }
@@ -3171,7 +3159,6 @@ input[type="button"].btn-block {
 
 .card-header {
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 0px solid rgba(0, 0, 0, 0.125);
 }
 .card-header:first-child {
