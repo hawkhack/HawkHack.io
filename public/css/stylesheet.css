@@ -55,9 +55,9 @@
   background-color: transparent;
   border: none;
   width: 100%;
-  text-align: left !important;
   font-size: 1.5em;
   cursor: pointer;
+  text-align: center !important;
 }
 
 .tab-content .card .button:focus {
@@ -74,7 +74,7 @@
 }
 
 .card-header h5 {
-  border-bottom: 2px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
   padding-bottom: 0.5rem;
   margin: 0;
 }
