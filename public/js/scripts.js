@@ -53,3 +53,16 @@ var navbarCollapse = function () {
 navbarCollapse();
 // Collapse the navbar when page is scrolled
 $(window).scroll(navbarCollapse);
+
+$('body').scrollspy({
+	target: '#mainNav'
+})
+$('#mainNav ul li a[href^="#"]').on('click', function (e) {
+	e.preventDefault();
+	var t = this.hash;
+	$('html, body').animate({
+		scrollTop: $(this.hash).offset().top
+	}, 650, function () {
+		window.location.hash = t;
+	});
+})

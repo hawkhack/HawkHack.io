@@ -138,17 +138,17 @@ section:nth-child(odd) {
     }
 
     #mainNav.navbar-shrink .nav-link:hover {
-        color: #64a19d;
+        color: #d1190d;
     }
 
     #mainNav.navbar-shrink .nav-link:active {
-        color: #467370;
+        color: #d1190d;
     }
 
     #mainNav.navbar-shrink .nav-link.active {
-        color: #64a19d;
+        color: #d1190d;
         outline: none;
-        border-bottom: 0.25rem solid #64a19d;
+        border-bottom: 0.25rem solid #d1190d;
     }
 }
 
