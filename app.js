@@ -5,8 +5,8 @@ const path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var nodemailer = require("nodemailer");
-var accountEmail = "contactrami98@gmail.com";
-var accountPassowrd = "Hassan111";
+var accountEmail = "";
+var accountPassowrd = "";
 const app = express();
 
 //View engine setup
@@ -32,6 +32,10 @@ app.use(express.static(__dirname + "/public"));
 
 app.get("/", function(req, res) {
   res.sendFile("/views/landing.html", { root: __dirname });
+});
+
+app.get("/admin", function(req, res) {
+  res.sendFile("/views/admin.html", { root: __dirname });
 });
 
 app.post("/contact", (req, res) => {

@@ -1,190 +1,180 @@
-body, html {
-    height: 100%;
-    background-image: url("../images/msulanding.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    position: relative;
-    
+body,
+html {
+  height: 100%;
+  background-image: url("../images/msulanding.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
 }
 
 :root {
-    --primary: #d1190d;
-    --linear: rgba(209, 25, 13, 0.9);
-    --secondLinear: rgba(34, 31, 31, 0.9);
-    --white: #ffffff;
-    --gradient: linear-gradient(
-      to bottom right,
-      rgba(209, 25, 13, 0.9) 0%,
-      rgba(34, 31, 31, 0.9) 100%
-    );
+  --primary: #d1190d;
+  --linear: rgba(209, 25, 13, 0.9);
+  --secondLinear: rgba(34, 31, 31, 0.9);
+  --white: #ffffff;
+  --gradient: linear-gradient(to bottom right, rgba(209, 25, 13, 0.9) 0%, rgba(34, 31, 31, 0.9) 100%);
 }
 
 #intro {
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    content: " ";
-    background: linear-gradient(
-        to bottom right,
-        rgba(209, 25, 13, 0.9) 0%,
-        rgba(34, 31, 31, 0.9) 100%
-    );
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  background: linear-gradient(to bottom right, rgba(209, 25, 13, 0.9) 0%, rgba(34, 31, 31, 0.9) 100%);
 }
 
 section:nth-child(odd) {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 .section {
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    min-height: 100%;
-    padding-top: 75px; 
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  min-height: 100%;
+  padding-top: 75px;
 }
 
 .herotitle {
-    font-size: 5em;
+  font-size: 5em;
 }
 
 #mainNav {
-    min-height: 56px;
+  min-height: 56px;
+  background-color: #fff;
+}
+
+#mainNav .navbar-togger {
+  font-size: 80%;
+  padding: 0.75rem;
+  color: "#64a19d";
+  border: 1px solid #64a19d;
+}
+
+#mainNav .navbar-togger:focus {
+  outline: none;
+}
+
+#mainNav .navbar-brand {
+  color: #161616;
+  font-weight: 700;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active,
+#mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    padding: 0.5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #mainNav .nav-link {
+    -webkit-transition: none;
+    transition: none;
+    padding: 2rem 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #mainNav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  #mainNav .nav-link:active {
+    color: white;
+  }
+  #mainNav .navbar-shrink {
     background-color: #fff;
   }
-  
-  #mainNav .navbar-togger {
-    font-size: 80%;
-    padding: 0.75rem;
-    color: "#64a19d";
-    border: 1px solid #64a19d;
-  }
-  
-  #mainNav .navbar-togger:focus {
-    outline: none;
-  }
-  
-  #mainNav .navbar-brand {
+  #mainNav .navbar-shrink .navbar-brand {
     color: #161616;
-    font-weight: 700;
   }
-  
-  #mainNav .navbar-nav .nav-item:hover {
-    color: fade(white, 80%);
+  #mainNav .navbar-shrink .nav-link {
+    color: #161616;
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav .navbar-shrink .nav-link:hover {
+    color: #64a19d;
+  }
+  #mainNav .navbar-shrink .nav-link:active {
+    color: #467370;
+  }
+  #mainNav .navbar-shrink .nav-link.active {
+    color: #64a19d;
     outline: none;
-    background-color: transparent;
+    border-bottom: 0.25rem solid #64a19d;
   }
-  
-  #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
-    outline: none;
-    background-color: transparent;
-  }
-  
-  @media (min-width: 992px) {
-    #mainNav {
-      padding-top: 0;
-      padding-bottom: 0;
-      border-bottom: none;
-      background-color: transparent;
-      -webkit-transition: background-color 0.3s ease-in-out;
-      transition: background-color 0.3s ease-in-out;
-    }
-    #mainNav .navbar-brand {
-      padding: .5rem 0;
-      color: rgba(255, 255, 255, 0.5);
-    }
-    #mainNav .nav-link {
-      -webkit-transition: none;
-      transition: none;
-      padding: 2rem 1.5rem;
-      color: rgba(255, 255, 255, 0.5);
-    }
-    #mainNav .nav-link:hover {
-      color: rgba(255, 255, 255, 0.75);
-    }
-    #mainNav .nav-link:active {
-      color: white;
-    }
-    #mainNav .navbar-shrink {
-      background-color: #fff;
-    }
-    #mainNav .navbar-shrink .navbar-brand {
-      color: #161616;
-    }
-    #mainNav .navbar-shrink .nav-link {
-      color: #161616;
-      padding: 1.5rem 1.5rem 1.25rem;
-      border-bottom: 0.25rem solid transparent;
-    }
-    #mainNav .navbar-shrink .nav-link:hover {
-      color: #64a19d;
-    }
-    #mainNav .navbar-shrink .nav-link:active {
-      color: #467370;
-    }
-    #mainNav .navbar-shrink .nav-link.active {
-      color: #64a19d;
-      outline: none;
-      border-bottom: 0.25rem solid #64a19d;
-    }
-  }
-  
-  .btn {
-    -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-    padding: 1.25rem 2rem;
-    font-family: 'Roboto';
-    font-size: 80%;
-    text-transform: uppercase;
-    letter-spacing: .15rem;
-    border: 0;
-  }
+}
 
-  .img {
-    background-image: url("../images/msulanding.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    position: relative;
-  }
+.btn {
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  font-family: "Roboto";
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
 
-  :root {
-    --primary: #d1190d;
-    --linear: rgba(209, 25, 13, 0.9);
-    --secondLinear: rgba(34, 31, 31, 0.9);
-    --white: #ffffff;
-    --gradient: linear-gradient(
-      to bottom right,
-      rgba(209, 25, 13, 0.9) 0%,
-      rgba(34, 31, 31, 0.9) 100%
-    );
-  }
+.img {
+  background-image: url("../images/msulanding.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
 
-  .d-flex {
-    display: flex !important;
-  }
-  .align-items-center {
-    align-items: center !important;
-  }
-  .section-aquamarine {
-    position: relative;
-    color: white;
-    background-size: cover;
-    background-position: center;
-  }
-  .section-aquamarine:before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    content: " ";
-    background: linear-gradient(
-      to bottom right,
-      rgba(209, 25, 13, 0.9) 0%,
-      rgba(34, 31, 31, 0.9) 100%
-    );
-  }
+:root {
+  --primary: #d1190d;
+  --linear: rgba(209, 25, 13, 0.9);
+  --secondLinear: rgba(34, 31, 31, 0.9);
+  --white: #ffffff;
+  --gradient: linear-gradient(to bottom right, rgba(209, 25, 13, 0.9) 0%, rgba(34, 31, 31, 0.9) 100%);
+}
+
+.d-flex {
+  display: flex !important;
+}
+.align-items-center {
+  align-items: center !important;
+}
+.section-aquamarine {
+  position: relative;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+.section-aquamarine:before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  background: linear-gradient(to bottom right, rgba(209, 25, 13, 0.9) 0%, rgba(34, 31, 31, 0.9) 100%);
+}
+
+.header {
+  font-weight: 700;
+  font-size: 1.2em;
+}
