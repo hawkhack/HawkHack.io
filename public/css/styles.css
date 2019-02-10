@@ -285,3 +285,24 @@ footer {
   width: 25em;
   margin: 20vh 0vh 5vh 0vh;
 }
+
+.regbtn {
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 200ms;
+}
+.regbtn:hover {
+  text-decoration: none;
+}
+
+.regbtn:hover {
+  background: white;
+  color: black;
+}
+#title {
+  margin-bottom: 2rem;
+}
