@@ -119,9 +119,6 @@ section:nth-child(odd) {
 
   #mainNav.navbar-shrink {
     background-color: #fff;
-    -webkit-box-shadow: 0px -21px 100px 30px #333030;
-    -moz-box-shadow: 0px -21px 100px 30px #333030;
-    box-shadow: 0px -21px 100px 30px #333030;
   }
 
   #mainNav.navbar-shrink .navbar-brand {
@@ -130,20 +127,22 @@ section:nth-child(odd) {
 
   #mainNav.navbar-shrink .nav-link {
     color: #161616;
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
   }
 
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #d1190d;
   }
 
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #d1190d;
   }
 
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #d1190d;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #d1190d;
   }
 }
 
