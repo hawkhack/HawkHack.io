@@ -119,6 +119,9 @@ section:nth-child(odd) {
 
   #mainNav.navbar-shrink {
     background-color: #fff;
+    -webkit-box-shadow: 0px -35px 100px 30px #333030;
+    -moz-box-shadow: 0px -35px 100px 30px #333030;
+    box-shadow: 0px -35px 100px 30px #333030;
   }
 
   #mainNav.navbar-shrink .navbar-brand {
