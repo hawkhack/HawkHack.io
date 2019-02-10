@@ -87,75 +87,75 @@
                     <a class="btn btn-lg btn-outline-light" style="display:none" id="ContactUsBtn">Contact Us</a>
                   </div>
                   <form
-                  action="/contact"
-                  id="contactform"
-                  method="POST"
-                  role="form"
-                  style="display:none;"
-                >
-                  <fieldset>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input
-                            id="name"
-                            name="name"
-                            type="text"
-                            placeholder="Your name"
-                            required="required"
-                            class="form-control"
-                          />
+                    action="/contact"
+                    id="contactform"
+                    method="POST"
+                    role="form"
+                    style="display:none;"
+                  >
+                    <fieldset>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              id="name"
+                              name="name"
+                              type="text"
+                              placeholder="Your name"
+                              required="required"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              id="email"
+                              name="email"
+                              type="text"
+                              placeholder="Your email"
+                              required="required"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              id="subject"
+                              name="subject"
+                              type="text"
+                              placeholder="Subject"
+                              required="required"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <textarea
+                              style="height: 150px;"
+                              id="message"
+                              name="message"
+                              placeholder="Enter your message here"
+                              rows="3"
+                              required="required"
+                              class="form-control"
+                            ></textarea>
+                          </div>
+                          <button
+                            type="submit"
+                            class="btn btn-lg btn-outline-light"
+                          >
+                            Send
+                          </button>
+                          <a class="btn btn-lg btn-outline-light" id="cancel"
+                            >Cancel</a
+                          >
                         </div>
                       </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input
-                            id="email"
-                            name="email"
-                            type="text"
-                            placeholder="Your email"
-                            required="required"
-                            class="form-control"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <input
-                            id="subject"
-                            name="subject"
-                            type="text"
-                            placeholder="Subject"
-                            required="required"
-                            class="form-control"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <textarea
-                            style="height: 150px;"
-                            id="message"
-                            name="message"
-                            placeholder="Enter your message here"
-                            rows="3"
-                            required="required"
-                            class="form-control"
-                          ></textarea>
-                        </div>
-                        <button
-                          type="submit"
-                          class="btn btn-lg btn-outline-light"
-                        >
-                          Send
-                        </button>
-                        <a class="btn btn-lg btn-outline-light" id="cancel"
-                          >Cancel</a
-                        >
-                      </div>
-                    </div>
-                  </fieldset>
-                </form>
+                    </fieldset>
+                  </form>
                 </div>
             </div>
           </div>
@@ -259,7 +259,22 @@
             </div>
           </div> -->
       </section>
-      <div class="linear">
+      <section id="about" class="section text-light">
+          <div class="container">
+            <div class="display-3">About</div>
+            <div class="padding">
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+                 nec, pellentesque eu, pretium quis, sem.</p>
+              <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+              <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper
+                nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                 Aliquam lorem ante, dapibus in, viverra quis, feugiat a</p>
+            </div>
+          </div>
+        </section>
+      <!-- <div class="linear">
         <div class="background">
           <div class="row" id="AboutUs">
             <div class="col-md-12">
@@ -344,7 +359,6 @@
           </div>
         </div>
 
-        <!-- MAP -->
         <div class="col-md-12 section3 py-3">
           <h2>
             <img
@@ -359,7 +373,6 @@
           ></iframe>
         </div>
 
-        <!-- FAQ Section -->
         <div class="tab-content" id="faq-tab-content" style="margin-top: 2rem;">
           <h1>
             <img
@@ -569,7 +582,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> --> -->
       <!-- Schedule -->
       <!-- <div-->
       <!--class="py-5 section-parallax"-->
@@ -689,9 +702,9 @@
       <!--</div>-->
       <!--</div> -->
       <!-- Sponsor logos -->
-      <div class="py-5 section bg-faded bg-light" id="sponsors">
+      <!-- <div class="py-5 section bg-faded bg-light" id="sponsors">
         <div>
-          <div class="row justify-content-md-center">
+          <div class="row ">
             <div class="col-md-8 text-center">
               <h2>Organizer</h2>
               <br />
@@ -714,17 +727,17 @@
                 >msuhawkhack@gmail.com</a
               >
             </p>
-            <!-- <div class="col-md-3 col-6">
+            <div class="col-md-3 col-6">
               <a href="https://www.bnymellon.com/us/en/home.jsp" class="sponsor" target="_blank">
                 <img
                   style="width:100%;"
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Bank-of-New-York-Mellon-Logo.svg/2000px-Bank-of-New-York-Mellon-Logo.svg.png"
                 />
               </a>
-            </div> -->
+            </div> 
           </div>
         </div>
-      </div>
+      </div> -->
     <footer class="text-center p-2 bg-dark text-light" id="footer">
       <div class="container">
         <div class="row text-md-left">
@@ -752,7 +765,7 @@
           </div>
         </div>
 
-        <div class="row ">
+        <div class="row">
           <div class="col-md-12 copyright">
             <p class="text-muted">
               © 2018 Copyright:

@@ -69,7 +69,6 @@ section:nth-child(odd) {
   #mainNav .navbar-brand {
     color: #161616;
     font-weight: 700;
-    padding: .9rem 0;
   }
   
   #mainNav .navbar-nav .nav-item:hover {
@@ -163,10 +162,6 @@ section:nth-child(odd) {
       rgba(34, 31, 31, 0.9) 100%
     );
   }
-
-
-
-
 
   .d-flex {
     display: flex !important;
