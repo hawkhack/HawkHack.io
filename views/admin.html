@@ -55,13 +55,15 @@
       "https://my.mlh.io/api/v2/users?client_id=ea5775c879a6e062b5a49483220810ad41e7276c90ecc6a4cdd638820bf10beb&secret=b939e746ea3cc1ac27ce81dfbcf92335f20c83619a86c9f1e4dd2c4d12b38ec8",
       function(Result) {
         var items = [];
+        var one = 1;
         $.each(Result.data, function(index, val) {
+          var newIndex = one + index;
           items.push(
             '<div class="col-md-12 text-center">' +
               "" +
               '<div class="row my-1">' +
               '<div class="col-md-2">' +
-              index +
+              newIndex +
               "</div>" +
               '<div class="col-md-2">' +
               val.first_name +
