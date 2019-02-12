@@ -14,6 +14,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const passport = require("passport");
 const keys = require("./config/keys");
+const { check } = require("express-validator/check");
 const Schema = mongoose.Schema;
 const app = express();
 
@@ -122,14 +123,9 @@ app.post("/login", (req, res) => {
       if (isMatch) {
         const payload = { id: user.id, username: user.username };
 
-        jwt.sign(
-          payload,
-          keys.secretOrkey,
-          { expiresIn: 3600 },
-          (err, token) => {
-            res.sendFile("/views/admin.html", { root: __dirname });
-          }
-        );
+        jwt.sign(payload, keys.secretOrkey, { expiresIn: 3600 }, (err, token) => {
+          res.sendFile("/views/admin.html", { root: __dirname });
+        });
       } else {
         errors.password = "Password incorrect";
         return res.status(400).json(errors);
