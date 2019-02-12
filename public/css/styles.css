@@ -7,6 +7,7 @@ html {
   background-attachment: fixed;
   background-position: center;
   position: relative;
+  font-family: "Roboto";
 }
 
 :root {
@@ -27,7 +28,7 @@ html {
 }
 
 section:nth-child(odd) {
-  background-color: #ddd;
+  background-color: #fff;
 }
 
 .section {
@@ -35,11 +36,21 @@ section:nth-child(odd) {
   background-position: center center;
   width: 100%;
   min-height: 100%;
-  padding-top: 75px;
+}
+
+#faq {
+  height: 100%;
+  background-image: url("../images/MSU2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
 }
 
 .herotitle {
   font-size: 5em;
+  margin: 15vh auto;
 }
 
 #mainNav {
@@ -47,20 +58,22 @@ section:nth-child(odd) {
   background-color: #fff;
 }
 
-#mainNav .navbar-togger {
+
+#mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: "#64a19d";
+  color: #64a19d;
   border: 1px solid #64a19d;
 }
 
-#mainNav .navbar-togger:focus {
+#mainNav .navbar-toggler:focus {
   outline: none;
 }
 
 #mainNav .navbar-brand {
   color: #161616;
   font-weight: 700;
+  padding: 0.9rem 0;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -88,39 +101,55 @@ section:nth-child(odd) {
     padding: 0.5rem 0;
     color: rgba(255, 255, 255, 0.5);
   }
+
   #mainNav .nav-link {
     -webkit-transition: none;
     transition: none;
     padding: 2rem 1.5rem;
     color: rgba(255, 255, 255, 0.5);
   }
+
+
   #mainNav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75);
   }
+
   #mainNav .nav-link:active {
     color: white;
   }
-  #mainNav .navbar-shrink {
+
+  #mainNav.navbar-shrink {
     background-color: #fff;
+    -webkit-box-shadow: 0px -35px 100px 30px #333030;
+    -moz-box-shadow: 0px -35px 100px 30px #333030;
+    box-shadow: 0px -35px 100px 30px #333030;
   }
-  #mainNav .navbar-shrink .navbar-brand {
+
+  #mainNav.navbar-shrink .navbar-brand {
     color: #161616;
   }
-  #mainNav .navbar-shrink .nav-link {
+
+  #mainNav.navbar-shrink .nav-link {
+
     color: #161616;
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
-  #mainNav .navbar-shrink .nav-link:hover {
-    color: #64a19d;
+
+
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: #d1190d;
   }
-  #mainNav .navbar-shrink .nav-link:active {
-    color: #467370;
+
+  #mainNav.navbar-shrink .nav-link:active {
+    color: #d1190d;
   }
-  #mainNav .navbar-shrink .nav-link.active {
-    color: #64a19d;
+
+  #mainNav.navbar-shrink .nav-link.active {
+    color: #d1190d;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #d1190d;
+
   }
 }
 
@@ -155,6 +184,7 @@ section:nth-child(odd) {
 .d-flex {
   display: flex !important;
 }
+
 .align-items-center {
   align-items: center !important;
 }
@@ -164,6 +194,7 @@ section:nth-child(odd) {
   background-size: cover;
   background-position: center;
 }
+
 .section-aquamarine:before {
   position: absolute;
   top: 0px;
@@ -174,4 +205,108 @@ section:nth-child(odd) {
   background: linear-gradient(to bottom right, rgba(209, 25, 13, 0.9) 0%, rgba(34, 31, 31, 0.9) 100%);
 }
 
+.contact-section {
+  padding: 5rem 0 0;
+}
+
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid #64a19d;
+}
+
+.contact-section .card h4 {
+  font-size: 0.8rem;
+  font-family: "Varela Round";
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.contact-section .card hr {
+  border-color: #64a19d;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+
+.contact-section .social {
+  margin-top: 5rem;
+}
+
+.contact-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-section .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-section .social a:active {
+  color: #fff;
+}
+
+footer {
+  padding: 5rem 0;
+}
+
+.socbt {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-style: solid;
+  border-color: var(--primary);
+  border-width: 2px;
+  background: black;
+  transition-duration: 250ms;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.socbt i {
+  text-align: center;
+  color: var(--primary);
+  font-size: 20px;
+  line-height: 44px;
+  vertical-align: middle;
+  transition-duration: 250ms;
+}
+
+.socbt:hover {
+  background: var(--primary);
+}
+
+.socbt:hover > i {
+  color: black;
+}
+
+#logo {
+  width: 25em;
+  margin: 20vh 0vh 5vh 0vh;
+}
+
+.regbtn {
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 200ms;
+}
+.regbtn:hover {
+  text-decoration: none;
+}
+
+.regbtn:hover {
+  background: white;
+  color: black;
+}
+#title {
+  margin-bottom: 2rem;
+}
 
