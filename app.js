@@ -95,7 +95,7 @@ app.post("/register", (req, res) => {
         newUser.password = hash;
         newUser
           .save()
-          .then(user => res.json(user))
+          .then(user => res.sendFile("/views/login.html", { root: __dirname }, console.log(user)))
           .catch(err => res.json(err));
       });
     });
