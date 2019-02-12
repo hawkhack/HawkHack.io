@@ -205,6 +205,7 @@
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
       }
+
       100% {
         opacity: 1;
         -webkit-transform: none;
@@ -218,6 +219,7 @@
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
       }
+
       100% {
         opacity: 1;
         -webkit-transform: none;
@@ -230,22 +232,27 @@
       from {
         opacity: 0;
       }
+
       to {
         opacity: 1;
       }
     }
+
     @-moz-keyframes fadeIn {
       from {
         opacity: 0;
       }
+
       to {
         opacity: 1;
       }
     }
+
     @keyframes fadeIn {
       from {
         opacity: 0;
       }
+
       to {
         opacity: 1;
       }
@@ -294,6 +301,7 @@
     .underlineHover {
       cursor: pointer;
     }
+
     /* Simple CSS3 Fade-in Animation */
     .underlineHover:after {
       display: block;
@@ -327,6 +335,7 @@
   </style>
   <!------ Include the above in your HEAD tag ---------->
 </head>
+
 <body>
   <div class="wrapper fadeInDown">
     <div id="formContent">
@@ -339,22 +348,10 @@
 
       <!-- Register Form -->
       <form action="/register" method="POST" role="form">
-        <input
-          type="text"
-          id="username"
-          class="fadeIn second"
-          name="username"
-          placeholder="USERNAME"
-          autocomplete="off"
-        />
-        <input
-          type="password"
-          id="password"
-          class="fadeIn third"
-          name="password"
-          placeholder="PASSWORD"
-          autocomplete="off"
-        />
+        <input type="text" id="username" class="fadeIn second" name="username" placeholder="USERNAME" autocomplete="off"
+          required />
+        <input type="password" id="password" class="fadeIn third" name="password" placeholder="PASSWORD"
+          autocomplete="off" required />
         <select id="role" name="role" class="box fadeIn second">
           <option>Select...</option>
           <option value="advisor">Advisor</option>
