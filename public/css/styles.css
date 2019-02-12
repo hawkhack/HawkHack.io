@@ -174,7 +174,4 @@ section:nth-child(odd) {
   background: linear-gradient(to bottom right, rgba(209, 25, 13, 0.9) 0%, rgba(34, 31, 31, 0.9) 100%);
 }
 
-.header {
-  font-weight: 700;
-  font-size: 1.2em;
-}
+
