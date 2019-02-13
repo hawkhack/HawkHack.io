@@ -118,7 +118,10 @@ app.post("/login", (req, res) => {
       errors.username = "User not found";
       return res.status(404).json(errors);
     }
-
+    if (user.role == "member") {
+      errors.noaccess = "You do not access to this page";
+      return res.status(400).json(errors);
+    }
     bcrypt.compare(password, user.password).then(isMatch => {
       if (isMatch) {
         const payload = { id: user.id, username: user.username };
