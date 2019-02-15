@@ -38,16 +38,6 @@ section:nth-child(odd) {
   min-height: 100%;
 }
 
-#faq {
-  height: 100%;
-  background-image: url("../images/MSU2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  position: relative;
-}
-
 .herotitle {
   font-size: 5em;
   margin: 15vh auto;
@@ -138,15 +128,15 @@ section:nth-child(odd) {
 
 
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #d1190d;
+    color: #941209;
   }
 
   #mainNav.navbar-shrink .nav-link:active {
-    color: #d1190d;
+    color: #941209;
   }
 
   #mainNav.navbar-shrink .nav-link.active {
-    color: #d1190d;
+    color: #941209;
     outline: none;
     border-bottom: 0.25rem solid #d1190d;
 
@@ -284,6 +274,10 @@ footer {
   color: black;
 }
 
+p, ul, ol, dl, table {
+  margin-bottom: 1em;
+}
+
 #logo {
   width: 25em;
   margin: 20vh 0vh 5vh 0vh;
@@ -310,6 +304,161 @@ footer {
   margin-bottom: 2rem;
 }
 
-#sponsorsTitle {
-  
+.wrapper.style2 {
+  background: #941209;
+  padding-top: 0;
+}
+
+.wrapper {
+  margin: 6.5em 0;
+  position: relative;
+  background: #fff;
+  padding: 6em 0 6em 0;
+}
+
+
+.aboutTitle {
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #941209;
+  background-color: var(--off-white);
+  width: 100%;
+  font-size: 45px;
+}
+
+.aboutText {
+  font-size: 25px;
+  opacity: 0.7;
+}
+
+#schedule {
+  background: white;
+}
+
+.inner {
+  padding: 3em 0 1em 0;
+  margin: 0 auto;
+  width: 55em;
+}
+
+.col-wrapper {
+  height: 400px;
+  color: black;
+}
+
+.col-md-6 {
+  float: left;
+  width: 50%;
+}
+
+.schedule-day {
+  text-align: center;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.scheduleTitle {
+  text-align: center;
+  font-size: 50px;
+  line-height: 2em;
+  color: #941209;
+}
+
+hr {
+  margin-bottom: 40px
+}
+
+.schedule-item {
+  text-align: left;
+  margin-top: 0.5em;
+}
+
+@media screen and (min-width: 340px) {
+  .schedule-item p {
+    display: inline-block;
+  }
+}
+
+.time {
+  width: 50%;
+  color: #941209;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.85em;
+}
+
+
+.section-title {
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #941209;
+  background-color: white;
+  width: 100%; 
+}
+
+#faq {
+  color: white;
+  height: 1250px;
+}
+
+.question {
+  padding: 10px 0px;
+  width: 95%;
+  overflow: hidden;
+  transition: max-height .5s, height .5s;
+}
+.question span {
+  display: block;
+  padding: 0px 10px;
+  line-height: 2;
+}
+
+.question h4 {
+  display: table;
+  color: #941209;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .pb-md-4 .py-md-4 {
+    padding-bottom: 1.5rem !important;
+  }
+}
+.pl-3, .px-3 {
+  padding-left: 1rem !important;
+}
+.pr-3, .px-3 {
+  padding-right: 1rem !important;
+}
+
+#sponsors {
+  background-color: white;
+}
+
+.sponsor-row {
+  display: flex;
+  max-height: 100px;
+  margin-bottom: 35px;
+}
+
+.justify-content-around {
+  justify-content: space-around !important;
+}
+
+.sponsor {
+  flex-grow: 1;
+  display: flex;
+  padding: 10px;
+  padding-top: 0;
+  max-width: 33%;
+}
+
+#footer {
+  background-color: #941209
 }
