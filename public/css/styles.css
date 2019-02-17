@@ -442,6 +442,7 @@ h2 {
 
 #sponsors {
   background-color: white;
+  height: 300px;
 }
 
 .sponsor-row {
@@ -460,6 +461,7 @@ h2 {
   padding: 10px;
   padding-top: 0;
   max-width: 33%;
+  
 }
 
 #footer {
