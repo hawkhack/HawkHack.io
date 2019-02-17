@@ -29,7 +29,7 @@ html {
   content: " ";
   background-image: url("../images/msulanding.jpg");
   background-attachment: fixed;
-  background-size: auto;
+  background-size: cover;
   background-position:center;
 }
 
