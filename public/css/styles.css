@@ -18,18 +18,6 @@ html {
   --gradient: linear-gradient(to bottom right, rgba(209, 25, 13, 0.9) 0%, rgba(34, 31, 31, 0.9) 100%);
 }
 
-#intro {
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  content: " ";
-  background-image: url("../images/msulanding.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
-
 section:nth-child(odd) {
   background-color: #fff;
 }
@@ -236,52 +224,12 @@ section:nth-child(odd) {
   color: #fff;
 }
 
-footer {
-  padding: 5rem 0;
-}
-
-.socbt {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  border-style: solid;
-  border-color: var(--primary);
-  border-width: 2px;
-  background: black;
-  transition-duration: 250ms;
-  text-align: center;
-  border-radius: 100%;
-}
-
-.socbt i {
-  text-align: center;
-  color: var(--primary);
-  font-size: 20px;
-  line-height: 44px;
-  vertical-align: middle;
-  transition-duration: 250ms;
-}
-
-.socbt:hover {
-  background: var(--primary);
-}
-
-.socbt:hover > i {
-  color: black;
-}
-
 p,
 ul,
 ol,
 dl,
 table {
   margin-bottom: 1em;
-}
-
-#logo {
-  width: 10rem;
-  margin: 20vh 0vh 5vh 0vh;
 }
 
 .regbtn {
@@ -317,6 +265,82 @@ table {
   padding: 6em 0 6em 0;
 }
 
+.inner {
+  padding: 3em 0 1em 0;
+  margin: 0 auto;
+  width: 55em;
+}
+
+.col-wrapper {
+  height: 400px;
+  color: black;
+}
+
+.col-md-6 {
+  float: left;
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .pb-md-4 .py-md-4 {
+    padding-bottom: 1.5rem !important;
+  }
+}
+.pl-3,
+.px-3 {
+  padding-left: 1rem !important;
+}
+.pr-3,
+.px-3 {
+  padding-right: 1rem !important;
+}
+
+/* LETS KEEP STUFF ORGANIZED */
+
+/* TOOLS */
+.skew {
+  transform: skewY(-3deg);
+}
+.unskew {
+  padding: 1em 0 5em 0;
+  transform: skewY(3deg);
+}
+
+.gradient {
+  background: var(--gradient);
+  height: 100%;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+/* INTRO */
+#logo {
+  width: 10rem;
+  margin: 20vh 0vh 5vh 0vh;
+}
+
+#intro {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  background-image: url("../images/msulanding.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ABOUT */
+#about {
+  padding-bottom: 5em;
+}
+
 .aboutTitle {
   padding: 10px;
   margin-bottom: 20px;
@@ -332,25 +356,115 @@ table {
   opacity: 0.7;
 }
 
-#schedule {
-  background-image: url("../images/msulanding.jpg");
-  background-attachment: fixed;
+.map {
+  border-radius: 20px;
+  border: red;
+  overflow: hidden;
+  height: 15em;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
 }
 
-.inner {
-  padding: 3em 0 1em 0;
-  margin: 0 auto;
-  width: 55em;
+/* SPONSORS */
+#sponsors {
+  background-color: white;
 }
 
-.col-wrapper {
-  height: 400px;
+.sponsor-row {
+  max-height: 100px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.justify-content-around {
+  justify-content: space-around !important;
+}
+
+.sponsor {
+  padding: 10px;
+  padding-top: 0;
+  max-width: 33%;
+}
+.sponsor img {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+}
+
+/* FOOTER */
+#footer {
+  background-color: #941209;
+}
+
+footer {
+  padding: 5rem 0;
+}
+
+.socbt {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-style: solid;
+  border-color: var(--primary);
+  border-width: 2px;
+  background: black;
+  transition-duration: 250ms;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.socbt i {
+  text-align: center;
+  color: var(--primary);
+  font-size: 20px;
+  line-height: 44px;
+  vertical-align: middle;
+  transition-duration: 250ms;
+}
+
+.socbt:hover {
+  background: var(--primary);
+}
+
+.socbt:hover > i {
   color: black;
 }
 
-.col-md-6 {
-  float: left;
-  width: 50%;
+/* FAQ */
+
+#faq {
+  color: white;
+}
+
+.question {
+  padding: 10px 0px;
+  width: 95%;
+  overflow: hidden;
+  transition: max-height 0.5s, height 0.5s;
+}
+.question span {
+  display: block;
+  padding: 0px 10px;
+  line-height: 2;
+}
+
+.question h4 {
+  display: table;
+  color: #941209;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+/* SCHEDULE */
+
+#schedule {
+  background-image: url("../images/msulanding.jpg");
+  background-attachment: fixed;
 }
 
 .schedule-day {
@@ -405,107 +519,4 @@ h2 {
   color: #941209;
   background-color: white;
   width: 100%;
-}
-
-#faq {
-  color: white;
-}
-
-.question {
-  padding: 10px 0px;
-  width: 95%;
-  overflow: hidden;
-  transition: max-height 0.5s, height 0.5s;
-}
-.question span {
-  display: block;
-  padding: 0px 10px;
-  line-height: 2;
-}
-
-.question h4 {
-  display: table;
-  color: #941209;
-  padding: 10px;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
-}
-
-@media (min-width: 768px) {
-  .pb-md-4 .py-md-4 {
-    padding-bottom: 1.5rem !important;
-  }
-}
-.pl-3,
-.px-3 {
-  padding-left: 1rem !important;
-}
-.pr-3,
-.px-3 {
-  padding-right: 1rem !important;
-}
-
-#sponsors {
-  background-color: white;
-}
-
-.sponsor-row {
-  max-height: 100px;
-  margin-bottom: 35px;
-  text-align: center;
-}
-
-.justify-content-around {
-  justify-content: space-around !important;
-}
-
-.sponsor {
-  padding: 10px;
-  padding-top: 0;
-  max-width: 33%;
-}
-.sponsor img {
-  width: 100%;
-  max-width: 300px;
-  height: 100%;
-}
-
-#footer {
-  background-color: #941209;
-}
-
-.skew {
-  transform: skewY(-3deg);
-}
-.unskew {
-  padding: 1em 0 5em 0;
-  transform: skewY(3deg);
-}
-
-.gradient {
-  background: var(--gradient);
-  height: 100%;
-}
-
-#about {
-  padding-bottom: 5em;
-}
-
-.anchor {
-  display: block;
-  position: relative;
-  top: -100px;
-  visibility: hidden;
-}
-
-.map {
-  border-radius: 20px;
-  border: red;
-  overflow: hidden;
-  height: 15em;
-}
-.map iframe {
-  width: 100%;
-  height: 100%;
 }
