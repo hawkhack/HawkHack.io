@@ -29,7 +29,8 @@ html {
   content: " ";
   background-image: url("../images/msulanding.jpg");
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: auto;
+  background-position:center;
 }
 
 section:nth-child(odd) {
@@ -482,12 +483,16 @@ h2 {
   transform: skewY(-3deg);
 }
 .unskew {
-  padding: 1em 0 2em 0;
+  padding: 1em 0 5em 0;
   transform: skewY(3deg);
 }
 
 .gradient {
   background: var(--gradient);
   height: 100%;
+}
+
+#about{
+  padding-bottom: 5em;
 }
 
