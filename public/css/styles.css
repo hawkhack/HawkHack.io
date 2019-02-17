@@ -317,6 +317,11 @@ table {
   top: -100px;
   visibility: hidden;
 }
+.divider {
+  height: 0.1em;
+  margin-bottom: 2em;
+  border-radius: 1em;
+}
 
 /* INTRO */
 #logo {
@@ -336,9 +341,16 @@ table {
   background-position: center;
 }
 
+#intro h2 {
+  color: #f5f5f5;
+}
+
 /* ABOUT */
 #about {
   padding-bottom: 5em;
+}
+#about .divider {
+  background: #eaeaea;
 }
 
 .aboutTitle {
@@ -348,7 +360,6 @@ table {
   color: #941209;
   background-color: var(--off-white);
   width: 100%;
-  font-size: 45px;
 }
 
 .aboutText {
@@ -373,6 +384,9 @@ table {
 /* SPONSORS */
 #sponsors {
   background-color: white;
+}
+#sponsors .divider {
+  background: #eaeaea;
 }
 
 .sponsor-row {
@@ -415,10 +429,6 @@ table {
   background: -ms-linear-gradient(315deg, #d1190d 0%, #120201 100%); /* ie10+ */
   background: linear-gradient(135deg, #d1190d 0%, #120201 100%); /* w3c */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1190d', endColorstr='#120201',GradientType=1 ); /* ie6-9 */
-
-  -webkit-box-shadow: 0px 50px 82px 50px #000000;
-  -moz-box-shadow: 0px 50px 82px 50px #000000;
-  box-shadow: 0px 50px 82px 50px #000000;
 }
 footer {
   padding: 5rem 0;
@@ -460,6 +470,9 @@ footer {
 #faq {
   color: white;
 }
+#faq .divider {
+  background: #eaeaea;
+}
 
 .question {
   padding: 10px 0px;
@@ -492,26 +505,12 @@ footer {
   box-shadow: 0px 0px 100px 0px #000000; */
 }
 
-.schedule-day {
-  text-align: center;
-  color: black;
-  margin-bottom: 40px;
+#schedule h2 {
+  color: #f5f5f5;
 }
 
-.scheduleTitle {
-  text-align: center;
-  font-size: 50px;
-  line-height: 2em;
-  color: #941209;
-}
-
-hr {
-  margin-bottom: 40px;
-}
-
-.schedule-item {
-  text-align: left;
-  margin-top: 0.5em;
+#schedule .divider {
+  background: #f5f5f5;
 }
 
 @media screen and (min-width: 340px) {
