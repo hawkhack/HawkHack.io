@@ -18,6 +18,10 @@ html {
   --gradient: linear-gradient(to bottom right, rgba(209, 25, 13, 0.9) 0%, rgba(34, 31, 31, 0.9) 100%);
 }
 
+.container {
+  padding-left: 0;
+}
+
 #intro {
   top: 0px;
   left: 0px;
@@ -279,7 +283,7 @@ p, ul, ol, dl, table {
 }
 
 #logo {
-  width: 25em;
+  width: 10rem;
   margin: 20vh 0vh 5vh 0vh;
 }
 
@@ -401,7 +405,6 @@ h2 {
 
 #faq {
   color: white;
-  height: 1250px;
 }
 
 .question {
@@ -461,4 +464,8 @@ h2 {
 
 #footer {
   background-color: #941209
+}
+
+h5 {
+  margin-bottom: 20px
 }
