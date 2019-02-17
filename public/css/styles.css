@@ -30,7 +30,7 @@ html {
   background-image: url("../images/msulanding.jpg");
   background-attachment: fixed;
   background-size: cover;
-  background-position:center;
+  background-position: center;
 }
 
 section:nth-child(odd) {
@@ -338,7 +338,6 @@ table {
 #schedule {
   background-image: url("../images/msulanding.jpg");
   background-attachment: fixed;
-  backgounr
 }
 
 .inner {
@@ -492,7 +491,13 @@ h2 {
   height: 100%;
 }
 
-#about{
+#about {
   padding-bottom: 5em;
 }
 
+.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
