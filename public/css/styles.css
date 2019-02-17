@@ -1,7 +1,7 @@
 body,
 html {
   height: 100%;
-  background-image: url("../images/msulanding.jpg");
+  /* background-image: url("../images/msulanding.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -27,7 +27,9 @@ html {
   width: 100%;
   height: 100%;
   content: " ";
-  background: linear-gradient(to bottom right, rgba(209, 25, 13, 0.9) 0%, rgba(34, 31, 31, 0.9) 100%);
+  background-image: url("../images/msulanding.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
 }
 
 section:nth-child(odd) {
@@ -333,7 +335,9 @@ table {
 }
 
 #schedule {
-  background: white;
+  background-image: url("../images/msulanding.jpg");
+  background-attachment: fixed;
+  backgounr
 }
 
 .inner {
@@ -473,3 +477,17 @@ h2 {
 #footer {
   background-color: #941209;
 }
+
+.skew {
+  transform: skewY(-3deg);
+}
+.unskew {
+  padding: 1em 0 2em 0;
+  transform: skewY(3deg);
+}
+
+.gradient {
+  background: var(--gradient);
+  height: 100%;
+}
+
