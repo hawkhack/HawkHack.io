@@ -18,9 +18,6 @@ html {
   --gradient: linear-gradient(to bottom right, rgba(209, 25, 13, 0.9) 0%, rgba(34, 31, 31, 0.9) 100%);
 }
 
-.container {
-}
-
 #intro {
   top: 0px;
   left: 0px;
@@ -500,4 +497,15 @@ h2 {
   position: relative;
   top: -100px;
   visibility: hidden;
+}
+
+.map {
+  border-radius: 20px;
+  border: red;
+  overflow: hidden;
+  height: 15em;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
 }
