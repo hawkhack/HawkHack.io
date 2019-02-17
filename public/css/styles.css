@@ -39,7 +39,6 @@ section:nth-child(odd) {
   background-size: cover;
   background-position: center center;
   width: 100%;
-  min-height: 100%;
 }
 
 .herotitle {
@@ -449,13 +448,12 @@ h2 {
 
 #sponsors {
   background-color: white;
-  height: 300px;
 }
 
 .sponsor-row {
-  display: flex;
   max-height: 100px;
   margin-bottom: 35px;
+  text-align: center;
 }
 
 .justify-content-around {
@@ -463,8 +461,6 @@ h2 {
 }
 
 .sponsor {
-  flex-grow: 1;
-  display: flex;
   padding: 10px;
   padding-top: 0;
   max-width: 33%;
