@@ -361,6 +361,9 @@ table {
   border: red;
   overflow: hidden;
   height: 15em;
+  -webkit-box-shadow: 0px 0px 60px 0px #6b6b6b;
+  -moz-box-shadow: 0px 0px 60px 0px #6b6b6b;
+  box-shadow: 0px 0px 60px 0px #6b6b6b;
 }
 .map iframe {
   width: 100%;
@@ -391,13 +394,32 @@ table {
   width: 100%;
   max-width: 300px;
   height: 100%;
+  transition: 100ms;
+}
+.sponsor img:hover {
+  transform: scale(1.1);
 }
 
 /* FOOTER */
 #footer {
-  background-color: #941209;
-}
+  background: -moz-linear-gradient(315deg, #d1190d 0%, #120201 100%); /* ff3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    color-stop(0%, #d1190d),
+    color-stop(100%, #120201)
+  ); /* safari4+,chrome */
+  background: -webkit-linear-gradient(315deg, #d1190d 0%, #120201 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(315deg, #d1190d 0%, #120201 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(315deg, #d1190d 0%, #120201 100%); /* ie10+ */
+  background: linear-gradient(135deg, #d1190d 0%, #120201 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1190d', endColorstr='#120201',GradientType=1 ); /* ie6-9 */
 
+  -webkit-box-shadow: 0px 50px 82px 50px #000000;
+  -moz-box-shadow: 0px 50px 82px 50px #000000;
+  box-shadow: 0px 50px 82px 50px #000000;
+}
 footer {
   padding: 5rem 0;
 }
@@ -465,6 +487,9 @@ footer {
 #schedule {
   background-image: url("../images/msulanding.jpg");
   background-attachment: fixed;
+  /* -webkit-box-shadow: 0px 0px 100px 0px #000000;
+  -moz-box-shadow: 0px 0px 100px 0px #000000;
+  box-shadow: 0px 0px 100px 0px #000000; */
 }
 
 .schedule-day {
@@ -507,6 +532,9 @@ h2 {
 
 .card {
   margin-bottom: 1em;
+  -webkit-box-shadow: 0px 0px 60px 0px #000000;
+  -moz-box-shadow: 0px 0px 60px 0px #000000;
+  box-shadow: 0px 0px 60px 0px #000000;
 }
 
 .card-header h5 {
