@@ -19,7 +19,6 @@ html {
 }
 
 .container {
-  padding-left: 0;
 }
 
 #intro {
@@ -464,6 +463,11 @@ h2 {
   padding: 10px;
   padding-top: 0;
   max-width: 33%;
+}
+.sponsor img {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
 }
 
 #footer {
