@@ -2,12 +2,31 @@ const createError = require("http-errors");
 const express = require("express");
 const exphbs = require("express-handlebars");
 const path = require("path");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
-var nodemailer = require("nodemailer");
-var accountEmail = "contactrami98@gmail.com";
-var accountPassowrd = "";
+const cookieParser = require("cookie-parser");
+const logger = require("morgan");
+const nodemailer = require("nodemailer");
+const MongoClient = "mongodb".MongoClient;
+const bodyParser = require("body-parser");
+const urlencodedParser = bodyParser.urlencoded({ extended: false });
+const url = require("./config/keys").mongoURI;
+const mongoose = require("mongoose");
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
+const passport = require("passport");
+const keys = require("./config/keys");
+const { check } = require("express-validator/check");
+const Schema = mongoose.Schema;
 const app = express();
+
+const User = require("./models/users");
+const validateRegisterInput = require("./validation/register");
+const validateLoginInput = require("./validation/login");
+
+// Passport middleware
+app.use(passport.initialize());
+
+// Passport Config
+require("./config/passport")(passport);
 
 //View engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -25,13 +44,133 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(__dirname + "/public"));
 
-// catch 404 and forward to error handler
-// app.use(function(req, res, next) {
-//   next(createError(404));
-// });
-
+// Get homepage
 app.get("/", function(req, res) {
   res.sendFile("/views/landing.html", { root: __dirname });
+});
+
+//Get registeration page
+app.get("/register", (req, res) => {
+  res.sendFile("/views/register.html", { root: __dirname });
+});
+
+//Get login page
+app.get("/login", (req, res) => {
+  res.sendFile("/views/login.html", { root: __dirname });
+});
+
+// Connect to MonogoDB
+mongoose
+  .connect(url, { useNewUrlParser: true })
+  .then(() => console.log("MonogoDB Connected"))
+  .catch(err => console.log(err));
+
+//Register
+app.post("/register", (req, res) => {
+  const { errors, isValid } = validateRegisterInput(req.body);
+
+  if (!isValid) {
+    return res.status(400).json(errors);
+  }
+
+  const username = req.body.username;
+
+  User.findOne({ username }).then(user => {
+    if (user) {
+      errors.username = "username exists";
+      return res.status(400).json({ errors });
+    }
+
+    const newUser = new User({
+      username: req.body.username,
+      password: req.body.password,
+      role: req.body.role
+    });
+
+    bcrypt.genSalt(10, (err, salt) => {
+      bcrypt.hash(newUser.password, salt, (err, hash) => {
+        if (err) {
+          console.log(err);
+        }
+        newUser.password = hash;
+        newUser
+          .save()
+          .then(user => res.sendFile("/views/login.html", { root: __dirname }, console.log(user)))
+          .catch(err => res.json(err));
+      });
+    });
+  });
+});
+
+//Login
+app.post("/login", (req, res) => {
+  const { errors, isValid } = validateLoginInput(req.body);
+
+  if (!isValid) {
+    return res.status(400).json(errors);
+  }
+
+  const username = req.body.username;
+  const password = req.body.password;
+
+  User.findOne({ username }).then(user => {
+    if (!user) {
+      errors.username = "User not found";
+      return res.status(404).json(errors);
+    }
+    if (!(user.role == "board" || user.role == "advisor")) {
+      errors.noaccess = "You do not access to this page";
+      return res.status(400).json(errors);
+    }
+    bcrypt.compare(password, user.password).then(isMatch => {
+      if (isMatch) {
+        const payload = { id: user.id, username: user.username };
+
+        jwt.sign(payload, keys.secretOrkey, { expiresIn: 3600 }, (err, token) => {
+          res.sendFile("/views/admin.html", { root: __dirname }).json({ success: true, token: "Bearer " + token });
+        });
+      } else {
+        errors.password = "Password incorrect";
+        return res.status(400).json(errors);
+      }
+    });
+  });
+});
+
+app.post("/setrole", (req, res) => {
+  const { errors, isValid } = validateLoginInput(req.body);
+
+  if (!isValid) {
+    return res.status(400).json(errors);
+  }
+
+  const username = req.body.username;
+  const password = req.body.password;
+  const userchange = req.body.userchange;
+  const rolechange = req.body.role;
+
+  User.findOne({ username }).then(user => {
+    if (!user) {
+      errors.username = "User not found";
+      return res.status(404).json(errors);
+    }
+    if (!(user.role != "board" || user.role != "advisor")) {
+      errors.noaccess = "You do not access to this page";
+      return res.status(400).json(errors);
+    }
+    bcrypt.compare(password, user.password).then(isMatch => {
+      if (isMatch) {
+        User.findOneAndUpdate({ username: userchange }, { $set: { role: rolechange } }, { new: true }).then(user => {
+          console.log(`role of ${userchange} changed to ${rolechange}`);
+          // res.redirect("/login");
+          res.json(user);
+        });
+      } else {
+        errors.password = "Password incorrect";
+        return res.status(400).json(errors);
+      }
+    });
+  });
 });
 
 app.post("/contact", (req, res) => {
