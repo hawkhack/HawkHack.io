@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130769180-1"></script>
@@ -13,22 +12,20 @@
   <!-- Adding bootstrap, custom css files, and fontawsome -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
-
-
   <link rel="stylesheet" href="css/styles.css" type="text/css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <script>
-      window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-      gtag("config", "UA-130769180-1");
-    </script>
+    gtag("config", "UA-130769180-1");
+  </script>
 
 
   <meta charset="utf-8" />
@@ -41,8 +38,9 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">HawkHack</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
@@ -71,14 +69,16 @@
         <div class="row">
           <div class="col-md-12">
             <div class="form-group">
-              <img id="logo" src="/images/logo.svg">
+              <div class="col-sm-12">
+              <img id="logo" src="/images/hhlogo-l.png">
               <h2 id="title">
-                Montclair State's Hackathon
+                Montclair State University Hackathon
               </h2>
               <a class="regbtn"
-                href="https://my.mlh.io/oauth/authorize?client_id=12b2e8829c334f7d582b8ca8b08729a3e482709c61077c98219d875ebccc9c84&redirect_uri=http://www.hawkhack.io/&response_type=token">
-                Register Now
-              </a>
+              href="https://my.mlh.io/oauth/authorize?client_id=12b2e8829c334f7d582b8ca8b08729a3e482709c61077c98219d875ebccc9c84&redirect_uri=http://www.hawkhack.io/&response_type=token">
+              Register Now
+            </a>
+          </div>
               <a class="btn btn-lg btn-outline-light" style="display:none" id="ContactUsBtn">Contact Us</a>
             </div>
             <form action="/contact" id="contactform" method="POST" role="form" style="display:none;">
@@ -87,6 +87,7 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       <input id="name" name="name" type="text" placeholder="Your name" required class="form-control" />
+
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -126,8 +127,7 @@
       <div class="row">
         <div class="col-12 aboutTitle text-center">
           <h2>What is this?</h2>
-          <hr class="divider">
-          </hr>
+          <hr/>
         </div>
         <div class="col-lg-12 aboutText">
           <p>Welcome to Montclair State's first ever annual Hackathon</p>
@@ -142,7 +142,7 @@
           </div>
         </div>
         <div class="col-lg-12 aboutText text-center">
-          <p><b>Saturday, March 30th and Sunday March 31st</b> in the <b>Student
+          <p><b>Saturday, March 30th and Sunday, March 31st</b> in the <b>Student
               Center</b></p>
         </div>
       </div>
@@ -161,8 +161,7 @@
       <div class="unskew">
         <div class="container text-center">
           <h2>Schedule</h2>
-          <div class="divider">
-          </div>
+          <hr/>
           <div class="row">
             <div class="col-lg-6 col-sm-12">
               <div class="card">
@@ -233,7 +232,7 @@
       <div class="row">
         <div class="section-title text-center">
           <h2>FAQ</h2>
-          <div class="divider"></div>
+          <hr/>
         </div>
       </div>
       <div class="row">
@@ -241,19 +240,18 @@
           <div class="row">
             <div class="col question">
               <h4>What is a hackathon?</h4>
-              <span>In this context, the word "hack" means to create.
+              <span>
                 A hackathon is an event where people come together for
-                24 hours to make something using the wonders of technology. But,
-                the goal of a hackathon isn't just to create something: it's also to
-                learn. Hackathons are the time to experiment with new technologies, APIs, SDKs, or
-                learn to code from scratch.
+                24 hours to make a project, whether is software or hardware. The goal is compete
+                for prizes or just have fun and learn something new.
+                This is the time to experiment with anything you like
               </span>
             </div>
           </div>
           <div class="row">
             <div class="col question">
               <h4>How much coding experience do I need?</h4>
-              <span>None at all. Hackathons are a fantastic place to
+              <span>Absolutely none. Hackathons are a great place to
                 learn and get advice from experienced hackers. We'll also
                 host plenty of workshops and have plenty of mentors so by the end of the
                 24 hours you'll have a working project even if you haven't coded a day in your life
@@ -263,19 +261,15 @@
           <div class="row">
             <div class="col question">
               <h4>Who can come?</h4>
-              <span>PackHacks is open to both high school and college students
-                (Cubs and Wolves divisions). High school students will compete only against each
-                other and will have 12 hours rather than the full 24 to complete their projects. However,
-                they will still be allowed to participate in all activities and workshops while attending.
-                An awards ceremony for just high school students will then be held on Saturday after the 12
-                hour mark. College students will continue coding until the 24 hour mark has been reached on
-                Sunday.</span>
+              <span>HawkHack welcomes all undergraduate and graduate students of all majors,
+                backgrounds, and skill levels. We also welcome High school students and post-graduates to come and
+                create</span>
             </div>
           </div>
           <div class="row">
             <div class="col question">
               <h4>Who do I contact?</h4>
-              <span>msuhawkhack@gmail.com</span>
+              <span>Feel free to email <a href="mailto:team@hawkhack.io">team@hawkhack.io</a> with any questions or concerns</span>
             </div>
           </div>
         </div>
@@ -283,7 +277,8 @@
           <div class="row">
             <div class="col question">
               <h4>How much does the event cost?</h4>
-              <span>$0 - PackHacks is 100% free for everyone to attend!</span>
+              <span> <b>NOTHING</b>. That's the best part about hackathons, it's free food and free
+                <i>swag</i></span>
             </div>
           </div>
           <div class="row">
@@ -294,7 +289,8 @@
                 judges
                 will then select the best overall projects as well as projects which excel in certain criteria (most
                 creative,
-                best looking, etc). Every project must be fully completed at the hackathon - no outside work/help is
+                best looking, etc). Every project must start and be fully completed at the hackathon - no outside
+                work/help is
                 permitted.</span>
             </div>
           </div>
@@ -308,7 +304,7 @@
           <div class="row">
             <div class="col question">
               <h4>Will hardware be provided?</h4>
-              <span>Yes, a limited amount of hardware will be provided, but students are encouraged to
+              <span>Not at this time, but students are encouraged to
                 bring their own if they have a specific device in mind they would like to use.</span>
             </div>
           </div>
@@ -332,7 +328,7 @@
       <div class="row">
         <div class="section-title text-center">
           <h2>Sponsors</h2>
-          <div class="divider"></div>
+          <hr/>
         </div>
       </div>
       <div class="row" id="sponsor-imgs">
@@ -385,9 +381,6 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
   <script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <!-- 
-  Script: Smooth scrolling between anchors in the same page
-  <script src="js/smooth-scroll.js"></script> -->
 
   <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
     data-dojo-config="usePlainJson: true, isDebug: false"></script>
@@ -396,4 +389,3 @@
 </body>
 
 </html>
-

@@ -295,6 +295,15 @@ table {
   padding-right: 1rem !important;
 }
 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #941209;
+  margin: 1em 0;
+  padding: 0;
+}
+
 /* LETS KEEP STUFF ORGANIZED */
 
 /* TOOLS */
@@ -317,22 +326,27 @@ table {
   top: -100px;
   visibility: hidden;
 }
-.divider {
-  height: 0.1em;
-  margin-bottom: 2em;
-  border-radius: 1em;
-}
 
 /* INTRO */
 #logo {
-  width: 10rem;
-  margin: 20vh 0vh 5vh 0vh;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  max-height: 600px;
+  margin: 10vh 0vh 10vh 0vh;
+}
+@media screen and (max-width: 63.9375em) {
+  #logo {
+    margin: 15vh 0vh 10vh 0vh;
+  }
+  #intro h2 {
+    font-size: 1.85rem;
+  }
 }
 
 #intro {
   top: 0px;
   left: 0px;
-  width: 100%;
   height: 100%;
   content: " ";
   background-image: url("../images/msulanding.jpg");
@@ -348,9 +362,6 @@ table {
 /* ABOUT */
 #about {
   padding-bottom: 5em;
-}
-#about .divider {
-  background: #eaeaea;
 }
 
 .aboutTitle {
@@ -385,9 +396,6 @@ table {
 #sponsors {
   background-color: white;
 }
-#sponsors .divider {
-  background: #eaeaea;
-}
 
 .sponsor-row {
   max-height: 100px;
@@ -409,9 +417,6 @@ table {
   max-width: 300px;
   height: 100%;
   transition: 100ms;
-}
-.sponsor img:hover {
-  transform: scale(1.1);
 }
 
 /* FOOTER */
@@ -470,8 +475,15 @@ footer {
 #faq {
   color: white;
 }
-#faq .divider {
-  background: #eaeaea;
+#faq a {
+  text-decoration: none;
+  color: #941209;
+  font-weight: 500;
+}
+#faq a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+  text-decoration-style: solid;
 }
 
 .question {
@@ -498,11 +510,12 @@ footer {
 /* SCHEDULE */
 
 #schedule {
+  margin-top: 2em;
   background-image: url("../images/msulanding.jpg");
   background-attachment: fixed;
-  -webkit-box-shadow: 0px 0px 100px 0px #000000;
-  -moz-box-shadow: 0px 0px 100px 0px #000000;
-  box-shadow: 0px 0px 100px 0px #000000;
+  -webkit-box-shadow: 0px 0px 46px 15px #a9a7a7;
+  -moz-box-shadow: 0px 0px 46px 15px #a9a7a7;
+  box-shadow: 0px 0px 46px 15px #a9a7a7;
 }
 #schedule .container {
   padding-top: 5em;
@@ -512,8 +525,8 @@ footer {
   color: #f5f5f5;
 }
 
-#schedule .divider {
-  background: #f5f5f5;
+#schedule hr {
+  border-top: 1px solid #f5f5f5;
 }
 
 @media screen and (min-width: 340px) {
