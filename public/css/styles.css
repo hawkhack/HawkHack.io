@@ -329,10 +329,10 @@ hr {
 
 /* INTRO */
 #logo {
-  padding: 10px;
-  padding-top: 0;
-  width: 15rem;
-  margin-top: 15vh;
+  width: 15vw;
+  min-width: 200px;
+  height: auto;
+  margin: 25vh 25vh 5vh 25vh;
 }
 @media screen and (max-width: 63.9375em) {
   #logo {
