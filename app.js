@@ -154,7 +154,7 @@ app.post("/setrole", (req, res) => {
       errors.username = "User not found";
       return res.status(404).json(errors);
     }
-    if (user.role != "board" || user.role != "advisor") {
+    if (!(user.role != "board" || user.role != "advisor")) {
       errors.noaccess = "You do not access to this page";
       return res.status(400).json(errors);
     }

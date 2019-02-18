@@ -36,7 +36,6 @@ section:nth-child(odd) {
 #mainNav {
   min-height: 56px;
   background-color: #fff;
-  
 }
 
 #mainNav .navbar-toggler {
@@ -128,7 +127,6 @@ section:nth-child(odd) {
     border-bottom: 0.25rem solid #d1190d;
   }
 }
-
 
 .btn {
   -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
@@ -412,9 +410,6 @@ table {
   height: 100%;
   transition: 100ms;
 }
-.sponsor img:hover {
-  transform: scale(1.1);
-}
 
 /* FOOTER */
 #footer {
@@ -506,6 +501,9 @@ footer {
   -moz-box-shadow: 0px 0px 100px 0px #000000;
   box-shadow: 0px 0px 100px 0px #000000;
 }
+#schedule .container {
+  padding-top: 5em;
+}
 
 #schedule h2 {
   color: #f5f5f5;
@@ -532,10 +530,7 @@ h2 {
 }
 
 .card {
-  margin-bottom: 1em;
-  /* -webkit-box-shadow: 0px 0px 60px 0px #000000;
-  -moz-box-shadow: 0px 0px 60px 0px #000000;
-  box-shadow: 0px 0px 60px 0px #000000; */
+  margin-bottom: 5em;
 }
 
 .card-header h5 {
