@@ -118,13 +118,52 @@ app.post("/login", (req, res) => {
       errors.username = "User not found";
       return res.status(404).json(errors);
     }
-
+    if (!(user.role == "board" || user.role == "advisor")) {
+      errors.noaccess = "You do not access to this page";
+      return res.status(400).json(errors);
+    }
     bcrypt.compare(password, user.password).then(isMatch => {
       if (isMatch) {
         const payload = { id: user.id, username: user.username };
 
         jwt.sign(payload, keys.secretOrkey, { expiresIn: 3600 }, (err, token) => {
-          res.sendFile("/views/admin.html", { root: __dirname });
+          res.sendFile("/views/admin.html", { root: __dirname }).json({ success: true, token: "Bearer " + token });
+        });
+      } else {
+        errors.password = "Password incorrect";
+        return res.status(400).json(errors);
+      }
+    });
+  });
+});
+
+app.post("/setrole", (req, res) => {
+  const { errors, isValid } = validateLoginInput(req.body);
+
+  if (!isValid) {
+    return res.status(400).json(errors);
+  }
+
+  const username = req.body.username;
+  const password = req.body.password;
+  const userchange = req.body.userchange;
+  const rolechange = req.body.role;
+
+  User.findOne({ username }).then(user => {
+    if (!user) {
+      errors.username = "User not found";
+      return res.status(404).json(errors);
+    }
+    if (user.role != "board" || user.role != "advisor") {
+      errors.noaccess = "You do not access to this page";
+      return res.status(400).json(errors);
+    }
+    bcrypt.compare(password, user.password).then(isMatch => {
+      if (isMatch) {
+        User.findOneAndUpdate({ username: userchange }, { $set: { role: rolechange } }, { new: true }).then(user => {
+          console.log(`role of ${userchange} changed to ${rolechange}`);
+          // res.redirect("/login");
+          res.json(user);
         });
       } else {
         errors.password = "Password incorrect";
