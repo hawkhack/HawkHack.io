@@ -36,6 +36,7 @@ section:nth-child(odd) {
 #mainNav {
   min-height: 56px;
   background-color: #fff;
+  
 }
 
 #mainNav .navbar-toggler {
@@ -67,7 +68,7 @@ section:nth-child(odd) {
   background-color: transparent;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
@@ -127,6 +128,7 @@ section:nth-child(odd) {
     border-bottom: 0.25rem solid #d1190d;
   }
 }
+
 
 .btn {
   -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
@@ -500,9 +502,9 @@ footer {
 #schedule {
   background-image: url("../images/msulanding.jpg");
   background-attachment: fixed;
-  /* -webkit-box-shadow: 0px 0px 100px 0px #000000;
+  -webkit-box-shadow: 0px 0px 100px 0px #000000;
   -moz-box-shadow: 0px 0px 100px 0px #000000;
-  box-shadow: 0px 0px 100px 0px #000000; */
+  box-shadow: 0px 0px 100px 0px #000000;
 }
 
 #schedule h2 {
@@ -531,9 +533,9 @@ h2 {
 
 .card {
   margin-bottom: 1em;
-  -webkit-box-shadow: 0px 0px 60px 0px #000000;
+  /* -webkit-box-shadow: 0px 0px 60px 0px #000000;
   -moz-box-shadow: 0px 0px 60px 0px #000000;
-  box-shadow: 0px 0px 60px 0px #000000;
+  box-shadow: 0px 0px 60px 0px #000000; */
 }
 
 .card-header h5 {
