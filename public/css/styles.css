@@ -329,15 +329,18 @@ hr {
 
 /* INTRO */
 #logo {
-  width: 40rem;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  max-height: 600px;
   margin: 10vh 0vh 10vh 0vh;
 }
-@media screen and (max-width: 63.9375em) {
+/* @media screen and (max-width: 63.9375em) {
   #logo {
     width: 20rem;
-    margin: 20vh 0vh 5vh 0vh;
+    margin: 10vh 0vh 5vh 0vh;
   }
-}
+} */
 
 #intro {
   top: 0px;
