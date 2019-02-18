@@ -67,160 +67,164 @@
   </nav>
   <section class="section intro-bg gradient" id="intro">
     <div class="gradient">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="form-group">
-            <img id="logo" src="/images/logo.svg">
-            <h2 id="title">
-              Montclair State's Hackathon
-            </h2>
-            <a class="regbtn"
-              href="https://my.mlh.io/oauth/authorize?client_id=ea5775c879a6e062b5a49483220810ad41e7276c90ecc6a4cdd638820bf10beb&redirect_uri=http://www.hawkhack.io/&response_type=token">
-              Register Now
-            </a>
-            <a class="btn btn-lg btn-outline-light" style="display:none" id="ContactUsBtn">Contact Us</a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <img id="logo" src="/images/logo.svg">
+              <h2 id="title">
+                Montclair State's Hackathon
+              </h2>
+              <a class="regbtn"
+                href="https://my.mlh.io/oauth/authorize?client_id=ea5775c879a6e062b5a49483220810ad41e7276c90ecc6a4cdd638820bf10beb&redirect_uri=http://www.hawkhack.io/&response_type=token">
+                Register Now
+              </a>
+              <a class="btn btn-lg btn-outline-light" style="display:none" id="ContactUsBtn">Contact Us</a>
+            </div>
+            <form action="/contact" id="contactform" method="POST" role="form" style="display:none;">
+              <fieldset>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input id="name" name="name" type="text" placeholder="Your name" required class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input id="email" name="email" type="text" placeholder="Your email" required="required"
+                        class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input id="subject" name="subject" type="text" placeholder="Subject" required="required"
+                        class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea style="height: 150px;" id="message" name="message" placeholder="Enter your message here"
+                        rows="3" required="required" class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-outline-light">
+                      Send
+                    </button>
+                    <a class="btn btn-lg btn-outline-light" id="cancel">Cancel</a>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
           </div>
-          <form action="/contact" id="contactform" method="POST" role="form" style="display:none;">
-            <fieldset>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input id="name" name="name" type="text" placeholder="Your name" required class="form-control" />
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input id="email" name="email" type="text" placeholder="Your email" required="required"
-                      class="form-control" />
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <input id="subject" name="subject" type="text" placeholder="Subject" required="required"
-                      class="form-control" />
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <textarea style="height: 150px;" id="message" name="message" placeholder="Enter your message here"
-                      rows="3" required="required" class="form-control"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-lg btn-outline-light">
-                    Send
-                  </button>
-                  <a class="btn btn-lg btn-outline-light" id="cancel">Cancel</a>
-                </div>
-              </div>
-            </fieldset>
-          </form>
         </div>
       </div>
     </div>
-  </div>
   </section>
   <a class="anchor" id="about-anchor"></a>
   <section id="about" class="section text-dark">
     <div class="container">
-      <div class="row text-center">
-        <div class="col-12 aboutTitle">
-          <h2>About</h2>
-          <div class="divider"></div>
+      <div class="row">
+        <div class="col-12 aboutTitle text-center">
+          <h2>What is this?</h2>
+          <hr class="divider">
+          </hr>
         </div>
         <div class="col-lg-12 aboutText">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          </p>
-          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-            ultricies
-            nec, pellentesque eu, pretium quis, sem.</p>
-          <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-          <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper
-            nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-            Aliquam lorem ante, dapibus in, viverra quis, feugiat a</p>
+          <p>Welcome to Montclair State's first ever annual Hackathon</p>
+          <p> HawkHack is a 24-hour hackathon at Montclair State University. We welcome hundreds of students to join us
+            in building awesome software and hardware projects.
+            We encourage beginner and advanced hackers
+            alike to challenge themselves and expand their skills. </p>
         </div>
-        <div class="col-lg-12">
-          <div class="map">
-            <iframe
-              frameborder=0 src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJw6dxo8v_wokRsipvcsmq9Nk&key=AIzaSyB4FZgCk09zSlEACZ5epM4h02W65vLjBDw&zoom=13"
-            ></iframe>
+        <div class="row" style="width: 100%">
+          <div class="col-12 aboutTitle text-center">
+            <h2>When and Where?</h2>
+          </div>
+        </div>
+        <div class="col-lg-12 aboutText text-center">
+          <p><b>Saturday, March 30th and Sunday March 31st</b> in the <b>Student
+              Center</b></p>
         </div>
       </div>
+      <div class="col-lg-12">
+        <div class="map">
+          <iframe frameborder=0
+            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJw6dxo8v_wokRsipvcsmq9Nk&key=AIzaSyB4FZgCk09zSlEACZ5epM4h02W65vLjBDw&zoom=13"></iframe>
+        </div>
       </div>
     </div>
   </section>
 
   <a class="anchor" id="schedule-anchor"></a>
-  <section id="schedule" class="section skew">
+  <section id="schedule" class="section scheduleSection skew">
     <div class="gradient">
       <div class="unskew">
-    <div class="container text-center">
-      <h2>Schedule</h2>
-        <div class="divider">
-        </div>
-      <div class="row">
-        <div class="col-lg-6 col-sm-12">
-          <div class="card">
-            <div class="card-header">
-                <h5>Saturday, March 30</h5>
-            </div>
-            <div class="card-body">
-              <div class="row">
-                  <p class="time">9:00 AM</p>
-                  <p>Check in</p>
-                </div>
-                <div class="row">
-                  <p class="time">10:00 AM</p>
-                  <p>Opening Ceremony</p>
-                </div>
-                <div class="row">
-                  <p class="time">11:00 AM</p>
-                  <p>Hacking Begins</p>
-                </div>
-                <div class="row">
-                  <p class="time">12:00 PM</p>
-                  <p>Lunch</p>
-                </div>
-                <div class="row">
-                  <p class="time">7:00 PM</p>
-                  <p>Dinner</p>
-                </div>
-            </div>
+        <div class="container text-center">
+          <h2>Schedule</h2>
+          <div class="divider">
           </div>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-          <div class="card">
-            <div class="card-header">
-              <h5>Sunday, March 31</h5>
+          <div class="row">
+            <div class="col-lg-6 col-sm-12">
+              <div class="card">
+                <div class="card-header">
+                  <h5>Saturday, March 30</h5>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <p class="time">9:00 AM</p>
+                    <p>Check in</p>
+                  </div>
+                  <div class="row">
+                    <p class="time">10:00 AM</p>
+                    <p>Opening Ceremony</p>
+                  </div>
+                  <div class="row">
+                    <p class="time">11:00 AM</p>
+                    <p>Hacking Begins</p>
+                  </div>
+                  <div class="row">
+                    <p class="time">12:00 PM</p>
+                    <p>Lunch</p>
+                  </div>
+                  <div class="row">
+                    <p class="time">7:00 PM</p>
+                    <p>Dinner</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="card-body">
-              <div class="row">
-                <p class="time">12:00 AM</p>
-                <p>Midnight Snack</p>
-              </div>
-              <div class="row">
-                <p class="time">9:00 AM</p>
-                <p>Breakfast </p>
-              </div>
-              <div class="row">
-                <p class="time">11:00 AM</p>
-                <p>Hacking ends </p>
-              </div>
-              <div class="row">
-                <p class="time">12:00 PM</p>
-                <p>Lunch </p>
-              </div>
-              <div class="row">
-                <p class="time">3:00 PM</p>
-                <p>Closing Ceremony </p>
+            <div class="col-lg-6 col-sm-12">
+              <div class="card">
+                <div class="card-header">
+                  <h5>Sunday, March 31</h5>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <p class="time">12:00 AM</p>
+                    <p>Midnight Snack</p>
+                  </div>
+                  <div class="row">
+                    <p class="time">9:00 AM</p>
+                    <p>Breakfast </p>
+                  </div>
+                  <div class="row">
+                    <p class="time">11:00 AM</p>
+                    <p>Hacking ends </p>
+                  </div>
+                  <div class="row">
+                    <p class="time">12:00 PM</p>
+                    <p>Lunch </p>
+                  </div>
+                  <div class="row">
+                    <p class="time">3:00 PM</p>
+                    <p>Closing Ceremony </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
-  </div>
   </section>
   <a class="anchor" id="faq-anchor"></a>
   <section id="faq" class="section text-dark">
