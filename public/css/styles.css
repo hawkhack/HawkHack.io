@@ -295,6 +295,15 @@ table {
   padding-right: 1rem !important;
 }
 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #941209;
+  margin: 1em 0;
+  padding: 0;
+}
+
 /* LETS KEEP STUFF ORGANIZED */
 
 /* TOOLS */
@@ -316,11 +325,6 @@ table {
   position: relative;
   top: -100px;
   visibility: hidden;
-}
-.divider {
-  height: 0.1em;
-  margin-bottom: 2em;
-  border-radius: 1em;
 }
 
 /* INTRO */
@@ -348,9 +352,6 @@ table {
 /* ABOUT */
 #about {
   padding-bottom: 5em;
-}
-#about .divider {
-  background: #eaeaea;
 }
 
 .aboutTitle {
@@ -384,9 +385,6 @@ table {
 /* SPONSORS */
 #sponsors {
   background-color: white;
-}
-#sponsors .divider {
-  background: #eaeaea;
 }
 
 .sponsor-row {
@@ -467,9 +465,6 @@ footer {
 #faq {
   color: white;
 }
-#faq .divider {
-  background: #eaeaea;
-}
 #faq a {
   text-decoration: none;
   color: #941209;
@@ -520,8 +515,8 @@ footer {
   color: #f5f5f5;
 }
 
-#schedule .divider {
-  background: #f5f5f5;
+#schedule hr {
+  border-top: 1px solid #f5f5f5;
 }
 
 @media screen and (min-width: 340px) {
