@@ -6,7 +6,7 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var nodemailer = require("nodemailer");
 var accountEmail = "contactrami98@gmail.com";
-var accountPassowrd = "Hassan111";
+var accountPassowrd = "";
 const app = express();
 
 //View engine setup
