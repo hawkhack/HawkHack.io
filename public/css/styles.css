@@ -410,9 +410,6 @@ table {
   height: 100%;
   transition: 100ms;
 }
-.sponsor img:hover {
-  transform: scale(1.1);
-}
 
 /* FOOTER */
 #footer {
