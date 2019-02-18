@@ -470,6 +470,16 @@ footer {
 #faq .divider {
   background: #eaeaea;
 }
+#faq a {
+  text-decoration: none;
+  color: #941209;
+  font-weight: 500;
+}
+#faq a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+  text-decoration-style: solid;
+}
 
 .question {
   padding: 10px 0px;
@@ -495,11 +505,12 @@ footer {
 /* SCHEDULE */
 
 #schedule {
+  margin-top: 2em;
   background-image: url("../images/msulanding.jpg");
   background-attachment: fixed;
-  -webkit-box-shadow: 0px 0px 100px 0px #000000;
-  -moz-box-shadow: 0px 0px 100px 0px #000000;
-  box-shadow: 0px 0px 100px 0px #000000;
+  -webkit-box-shadow: 0px 0px 46px 15px #a9a7a7;
+  -moz-box-shadow: 0px 0px 46px 15px #a9a7a7;
+  box-shadow: 0px 0px 46px 15px #a9a7a7;
 }
 #schedule .container {
   padding-top: 5em;
