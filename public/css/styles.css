@@ -332,6 +332,12 @@ hr {
   width: 40rem;
   margin: 10vh 0vh 10vh 0vh;
 }
+@media screen and (max-width: 63.9375em) {
+  #logo {
+    width: 20rem;
+    margin: 30vh 0vh 10vh 0vh;
+  }
+}
 
 #intro {
   top: 0px;
