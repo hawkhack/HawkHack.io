@@ -329,8 +329,8 @@ hr {
 
 /* INTRO */
 #logo {
-  width: 25vw;
-  min-width: 200px;
+  width: 20vw;
+  min-width: 275px;
   height: auto;
   margin: 25vh 25vh 5vh 25vh;
 }
