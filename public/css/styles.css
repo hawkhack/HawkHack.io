@@ -329,11 +329,10 @@ hr {
 
 /* INTRO */
 #logo {
-  width: 100%;
+  width: 20vw;
+  min-width: 275px;
   height: auto;
-  max-width: 600px;
-  max-height: 600px;
-  margin: 10vh 0vh 10vh 0vh;
+  margin: 25vh 25vh 5vh 25vh;
 }
 @media screen and (max-width: 63.9375em) {
   #logo {
