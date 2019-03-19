@@ -329,14 +329,22 @@ hr {
 
 /* INTRO */
 #logo {
+  display: block;
   width: 20vw;
   min-width: 275px;
   height: auto;
-  margin: 25vh 25vh 5vh 25vh;
+  margin-top: 25vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
 }
 @media screen and (max-width: 63.9375em) {
   #logo {
-    margin: 15vh 0vh 10vh 0vh;
+    /* margin: 15vh 0vh 10vh 0vh; */
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+
   }
   #intro h2 {
     font-size: 1.85rem;
