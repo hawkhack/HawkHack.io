@@ -16,6 +16,7 @@ const passport = require("passport");
 const keys = require("./config/keys");
 const { check } = require("express-validator/check");
 const Schema = mongoose.Schema;
+const cors = require("cors");
 
 const {token, botToken } = require("./config/config");
 const request = require("request");
@@ -28,6 +29,9 @@ const validateLoginInput = require("./validation/login");
 
 // Passport middleware
 app.use(passport.initialize());
+
+//cors
+app.use(cors());
 
 // Passport Config
 require("./config/passport")(passport);
