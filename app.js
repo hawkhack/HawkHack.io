@@ -181,7 +181,7 @@ app.post("/setrole", (req, res) => {
   });
 });
 
-app.get("/api/announcements", (_req, _res)=>{
+app.get("/api/announcements", cors(), (_req, _res)=>{
   var log = [];
   var history = {};
 
