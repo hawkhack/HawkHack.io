@@ -1,224 +1,252 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130769180-1"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- PAGE settings -->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <meta name="description" content="Montclair State Hackathon" />
+    <meta name="keywords" content="montclair state university hackathon hackhawk" />
+    <!-- Adding bootstrap, custom css files, and fontawsome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130769180-1"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- PAGE settings -->
-  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-  <meta name="description" content="Montclair State Hackathon" />
-  <meta name="keywords" content="montclair state university hackathon hackhawk" />
-  <!-- Adding bootstrap, custom css files, and fontawsome -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
-  <link rel="stylesheet" href="css/styles.css" type="text/css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-  <script>
-    window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+      gtag("config", "UA-130769180-1");
+    </script>
 
-    gtag("config", "UA-130769180-1");
-  </script>
+    <meta charset="utf-8" />
 
+    <title>HawkHack Spring 2019</title>
+  </head>
 
-  <meta charset="utf-8" />
-
-  <title>HawkHack Spring 2019</title>
-
-</head>
-
-<body id="page-top">
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">HawkHack</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about-anchor">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#schedule-anchor">Schedule</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#faq-anchor">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#sponsors-anchor">Sponsors</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section class="section intro-bg gradient" id="intro">
-    <div class="gradient">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="form-group">
-              <div class="col-sm-12">
-              <img id="logo" src="/images/hhlogo-l.png">
-              <h2 id="title">
-                Montclair State University Hackathon
-              </h2>
-              <a class="regbtn"
-              href="https://docs.google.com/forms/d/18G01GdmA8YFVsN74Z1pnKUNssz5iy6UAxbJo_R5azGQ">
-              Register Now
-            </a>
-          </div>
-              <a class="btn btn-lg btn-outline-light" style="display:none" id="ContactUsBtn">Contact Us</a>
-            </div>
-            <form action="/contact" id="contactform" method="POST" role="form" style="display:none;">
-              <fieldset>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input id="name" name="name" type="text" placeholder="Your name" required class="form-control" />
-
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input id="email" name="email" type="text" placeholder="Your email" required="required"
-                        class="form-control" />
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <input id="subject" name="subject" type="text" placeholder="Subject" required="required"
-                        class="form-control" />
-                    </div>
-
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <textarea style="height: 150px;" id="message" name="message" placeholder="Enter your message here"
-                        rows="3" required="required" class="form-control"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-lg btn-outline-light">
-                      Send
-                    </button>
-                    <a class="btn btn-lg btn-outline-light" id="cancel">Cancel</a>
-                  </div>
-                </div>
-              </fieldset>
-            </form>
-          </div>
+  <body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">HawkHack</a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about-anchor">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#schedule-anchor">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#faq-anchor">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#sponsors-anchor">Sponsors</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
-  <a class="anchor" id="about-anchor"></a>
-  <section id="about" class="section text-dark">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 aboutTitle text-center">
-          <h2>What is this?</h2>
-          <hr/>
-        </div>
-        <div class="col-lg-12 aboutText">
-          <p>HawkHack is a 24-hour hackathon event at Montclair State University.
-            Students of any majors are welcome to form a team and build awesome 
-            software and hardware projects. Industry experts and mentors will be 
-            there to help and guide students and create a learning environment 
-            through talks, workshops, and one-on-one guidance. We encourage 
-            anyone from beginner to advanced developers to challenge themselves 
-            and create something awesome.</p>
-        </div>
-        <div class="row" style="width: 100%">
-          <div class="col-12 aboutTitle text-center">
-            <h2>When and Where?</h2>
-          </div>
-        </div>
-        <div class="col-lg-12 aboutText text-center">
-          <p><b>Saturday, March 30th - Sunday, March 31st</b> in the <b>Student
-              Center Ballrooms</b></p>
-        </div>
-      </div>
-      <div class="col-lg-12">
-        <div class="map">
-          <iframe frameborder=0
-            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJw6dxo8v_wokRsipvcsmq9Nk&key=AIzaSyB4FZgCk09zSlEACZ5epM4h02W65vLjBDw&zoom=13"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <a class="anchor" id="schedule-anchor"></a>
-  <section id="schedule" class="section scheduleSection skew">
-    <div class="gradient">
-      <div class="unskew">
+    <section class="section intro-bg gradient" id="intro">
+      <div class="gradient">
         <div class="container text-center">
-          <h2>Schedule</h2>
-          <hr/>
           <div class="row">
-            <div class="col-lg-6 col-sm-12">
-              <div class="card">
-                <div class="card-header">
-                  <h5>Saturday, March 30</h5>
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <img id="logo" src="/images/hhlogo-l.png" />
+                  <h2 id="title">
+                    Montclair State University Hackathon
+                  </h2>
+                  <a class="regbtn" href="https://docs.google.com/forms/d/18G01GdmA8YFVsN74Z1pnKUNssz5iy6UAxbJo_R5azGQ">
+                    Register Now
+                  </a>
                 </div>
-                <div class="card-body">
+                <a class="btn btn-lg btn-outline-light" style="display:none" id="ContactUsBtn">Contact Us</a>
+              </div>
+              <form action="/contact" id="contactform" method="POST" role="form" style="display:none;">
+                <fieldset>
                   <div class="row">
-                    <p class="time">9:00 AM</p>
-                    <p>Check in</p>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input
+                          id="name"
+                          name="name"
+                          type="text"
+                          placeholder="Your name"
+                          required
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input
+                          id="email"
+                          name="email"
+                          type="text"
+                          placeholder="Your email"
+                          required="required"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input
+                          id="subject"
+                          name="subject"
+                          type="text"
+                          placeholder="Subject"
+                          required="required"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea
+                          style="height: 150px;"
+                          id="message"
+                          name="message"
+                          placeholder="Enter your message here"
+                          rows="3"
+                          required="required"
+                          class="form-control"
+                        ></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-lg btn-outline-light">
+                        Send
+                      </button>
+                      <a class="btn btn-lg btn-outline-light" id="cancel">Cancel</a>
+                    </div>
                   </div>
-                  <div class="row">
-                    <p class="time">10:00 AM</p>
-                    <p>Opening Ceremony</p>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a class="anchor" id="about-anchor"></a>
+    <section id="about" class="section text-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 aboutTitle text-center">
+            <h2>What is this?</h2>
+            <hr />
+          </div>
+          <div class="col-lg-12 aboutText">
+            <p>
+              HawkHack is a 24-hour hackathon event at Montclair State University. Students of any majors are welcome to
+              form a team and build awesome software and hardware projects. Industry experts and mentors will be there
+              to help and guide students and create a learning environment through talks, workshops, and one-on-one
+              guidance. We encourage anyone from beginner to advanced developers to challenge themselves and create
+              something awesome.
+            </p>
+          </div>
+          <div class="row" style="width: 100%">
+            <div class="col-12 aboutTitle text-center">
+              <h2>When and Where?</h2>
+            </div>
+          </div>
+          <div class="col-lg-12 aboutText text-center">
+            <p><b>Saturday, March 30th - Sunday, March 31st</b> in the <b>Student Center Ballrooms</b></p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="map">
+            <iframe
+              frameborder="0"
+              src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJw6dxo8v_wokRsipvcsmq9Nk&key=AIzaSyB4FZgCk09zSlEACZ5epM4h02W65vLjBDw&zoom=13"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a class="anchor" id="schedule-anchor"></a>
+    <section id="schedule" class="section scheduleSection skew">
+      <div class="gradient">
+        <div class="unskew">
+          <div class="container text-center">
+            <h2>Schedule</h2>
+            <hr />
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h5>Saturday, March 30</h5>
                   </div>
-                  <div class="row">
-                    <p class="time">11:00 AM</p>
-                    <p>Hacking Begins</p>
-                  </div>
-                  <div class="row">
-                    <p class="time">12:00 PM</p>
-                    <p>Lunch</p>
-                  </div>
-                  <div class="row">
-                    <p class="time">7:00 PM</p>
-                    <p>Dinner</p>
+                  <div class="card-body">
+                    <div class="row">
+                      <p class="time">9:00 AM</p>
+                      <p>Check in</p>
+                    </div>
+                    <div class="row">
+                      <p class="time">10:00 AM</p>
+                      <p>Opening Ceremony</p>
+                    </div>
+                    <div class="row">
+                      <p class="time">11:00 AM</p>
+                      <p>Hacking Begins</p>
+                    </div>
+                    <div class="row">
+                      <p class="time">12:00 PM</p>
+                      <p>Lunch</p>
+                    </div>
+                    <div class="row">
+                      <p class="time">7:00 PM</p>
+                      <p>Dinner</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-              <div class="card">
-                <div class="card-header">
-                  <h5>Sunday, March 31</h5>
-                </div>
-                <div class="card-body">
-                  <div class="row">
-                    <p class="time">12:00 AM</p>
-                    <p>Midnight Snack</p>
+              <div class="col-lg-6 col-sm-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h5>Sunday, March 31</h5>
                   </div>
-                  <div class="row">
-                    <p class="time">9:00 AM</p>
-                    <p>Breakfast </p>
-                  </div>
-                  <div class="row">
-                    <p class="time">11:00 AM</p>
-                    <p>Hacking ends </p>
-                  </div>
-                  <div class="row">
-                    <p class="time">12:00 PM</p>
-                    <p>Lunch </p>
-                  </div>
-                  <div class="row">
-                    <p class="time">3:00 PM</p>
-                    <p>Closing Ceremony </p>
+                  <div class="card-body">
+                    <div class="row">
+                      <p class="time">12:00 AM</p>
+                      <p>Midnight Snack</p>
+                    </div>
+                    <div class="row">
+                      <p class="time">9:00 AM</p>
+                      <p>Breakfast</p>
+                    </div>
+                    <div class="row">
+                      <p class="time">11:00 AM</p>
+                      <p>Hacking ends</p>
+                    </div>
+                    <div class="row">
+                      <p class="time">12:00 PM</p>
+                      <p>Lunch</p>
+                    </div>
+                    <div class="row">
+                      <p class="time">3:00 PM</p>
+                      <p>Closing Ceremony</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -226,251 +254,263 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <a class="anchor" id="faq-anchor"></a>
-  <section id="faq" class="section text-dark">
-    <div class="container">
-      <div class="row">
-        <div class="section-title text-center">
-          <h2>FAQ</h2>
-          <hr/>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 col-sm-12">
-          <div class="row">
-            <div class="col question">
-              <h4>What is a hackathon?</h4>
-              <span>
-                  Hackathons are an intense event that bring together software 
-                  developers, graphic designers and user interface specialists 
-                  along with industry process experts and professionals to identify 
-                  issues and create software solutions, usually within a weekend.
-              </span>
-            </div>
-          </div>
-          <div class="row">
-              <div class="col question">
-                <h4>What is the goal of the hackathon?</h4>
-                <span>
-                    We want to create an environment that embraces new 
-                    ideas and technology solutions. A place where people 
-                    passionate in technology can come innovate the industry.
-                </span>
-              </div>
-            </div>
-          <div class="row">
-              <div class="col question">
-                <h4>I'm new, what should I do?</h4>
-                <span>We would love to have you at HawkHack! Throughout 
-                  the event we will be hosting workshops where you can 
-                  try new things, start a project for that idea you 
-                  always had in mind, and receive help from industry 
-                  experts.</span>
-              </div>
-            </div>
-          <div class="row">
-            <div class="col question">
-              <h4>How much coding experience do I need?</h4>
-              <span>Absolutely none. Hackathons are a great place to
-                learn and get advice from experienced hackers. We'll also
-                host plenty of workshops and have plenty of mentors so by the end of the
-                24 hours you'll have a working project even if you haven't coded a day in your life
-                before. We also host a prize for best beginner hack.</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col question">
-              <h4>Who can come?</h4>
-              <span>If you're at a current college/university student, a recent 
-                graduate (up to 1 year), or a high school student, you're more 
-                than welcome to attend! We are open to students of all academic 
-                backgrounds and skill levels, so whether you’re an aspiring artist 
-                or an expert engineer, there’s a place for you at HawkHack!</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col question">
-              <h4>Do I need a team?</h4>
-              <span>You are welcome to come solo or in a group no more than 4.
-                We will provide means for you to find a team if you don’t have one.</span>
-            </div>
+    </section>
+    <a class="anchor" id="faq-anchor"></a>
+    <section id="faq" class="section text-dark">
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center">
+            <h2>FAQ</h2>
+            <hr />
           </div>
         </div>
-        <div class="col-lg-6 col-sm-12">
-          <div class="row">
-            <div class="col question">
-              <h4>How much does it cost to attend?</h4>
-              <span>
-                  FREE, that’s how much. The event is completely FREE to 
-                  attend. FREE food, FREE games, FREE fun. Sounds good, 
-                  doesn’t it?
-              </span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col question">
-              <h4>Do I need to bring a computer?</h4>
-              <span>Yes, all participants must come with their own laptop if they intend to code during the competition.
-                Laptops will not be provided.</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col question">
-              <h4>Will hardware be provided?</h4>
-              <span>Not at this time, but students are encouraged to
-                bring their own if they have a specific device in mind they would like to use.</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col question">
-              <h4>How will I get there?</h4>
-              <span>You are responsible for finding your own transportation. Ideally, try and find a ride because we
-                don't
-                recommend driving back
-                for safety reasons after a hackathon. We can help find you a carpool. We will not be providing travel
-                reimbursement at this time.</span>
-            </div>
-          </div>
-          <div class="row">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <div class="row">
               <div class="col question">
-                <h4>Can I win anything?</h4>
+                <h4>What is a hackathon?</h4>
                 <span>
-                    Yes! The only way to find out is to participate in the hackathon!
+                  Hackathons are an intense event that bring together software developers, graphic designers and user
+                  interface specialists along with industry process experts and professionals to identify issues and
+                  create software solutions, usually within a weekend.
                 </span>
               </div>
             </div>
             <div class="row">
-                <div class="col question">
-                  <h4>How will I get there?</h4>
-                  <span>
-                      Just click the big "Register Now" button up top. Make sure you check 
-                      your email too since we'll be having your verify your email address 
-                      and sending acceptances through there too!
-                  </span>
-                </div>
+              <div class="col question">
+                <h4>What is the goal of the hackathon?</h4>
+                <span>
+                  We want to create an environment that embraces new ideas and technology solutions. A place where
+                  people passionate in technology can come innovate the industry.
+                </span>
               </div>
-              <div class="row">
-                <div class="col question">
-                  <h4>Do you guys have a slack?</h4>
-                  <span>
-                    Yes we do! You can join it here: 
-                    <a href="https://join.slack.com/t/hawkhack/shared_invite/enQtNTU0MDQyNTQyNjc0LThmMGExYjIxMjk0MDRkZjMxMjQ5YjM0ZjU3YzQzNTEzMGI4ZDA5OTNlMDg3OTcwODQwNTc0YTJmN2NlNzgxMDc">join.slack.com/t/hawkhack</a>
-                  </span>
-                </div>
+            </div>
+            <div class="row">
+              <div class="col question">
+                <h4>I'm new, what should I do?</h4>
+                <span>
+                  We would love to have you at HawkHack! Throughout the event we will be hosting workshops where you
+                  can try new things, start a project for that idea you always had in mind, and receive help from
+                  industry experts.
+                </span>
               </div>
-              <div class="row">
-                  <div class="col question">
-                    <h4>How can I or my company become a sponsor?</h4>
-                    <span>
-                      If you'd like to sponsor, please send us an email 
-                      at team@hawkhack.io and our team will get back to 
-                      you promptly.
-                    </span>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col question">
-                    <h4>I have another question!</h4>
-                    <span>
-                    For anymore questions, you can reach us on
-                    our slack which you can join here: 
-                    <a href="https://join.slack.com/t/hawkhack/shared_invite/enQtNTU0MDQyNTQyNjc0LThmMGExYjIxMjk0MDRkZjMxMjQ5YjM0ZjU3YzQzNTEzMGI4ZDA5OTNlMDg3OTcwODQwNTc0YTJmN2NlNzgxMDc">join.slack.com/t/hawkhack.</a>
-                    </span>
-                  </div>
-                </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <a class="anchor" id="sponsors-anchor"></a>
-  <section id="sponsors" class="section text-dark">
-    <div class="container">
-      <div class="row">
-        <div class="section-title text-center">
-          <h2>Sponsors</h2>
-          <hr/>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 justify-content-around sponsor-row">
-          <a href="https://www.google.com" class="sponsor">
-            <img src="./images/Googles-Logo.png">
-          </a>
-        </div>
-        <div class="col-lg-6 justify-content-around sponsor-row">
-          <a href="https://www.montclaircomputerclub.com/" class="sponsor">
-            <img src="./images/ComputerClub_Logo.png">
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 justify-content-around sponsor-row">
-          <a href="https://www.bnymellon.com/us/en/home.jsp" class="sponsor">
-            <img src="./images/bnymellon.png">
-          </a>
-        </div>
-        <div class="col-lg-6 justify-content-around sponsor-row">
-          <a href="https://www.ups.com" >
-            <img src="./images/ups.png" width="100px" height="auto">
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 justify-content-around sponsor-row">
-          <a href="https://monsterenergy.com">
-          <img src="./images/monsterenergy.png" width="200px" height="auto">
-        </a>
-        </div>
-        <div class="col-lg-6 justify-content-around sponsor-row">
-          <a href="https://www.montclair.edu/graduate/">
-          <img src="./images/TGS2.png" width="300px" height="auto">
-        </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="text-center p-2 text-light" id="footer">
-    <div class="container">
-      <div class="row text-md-left">
-        <div class="col-md-12 d-flex justify-content-center p-1">
-          <h3>Stay in Touch!</h3>
-        </div>
-        <div class="col-md-12 d-flex justify-content-center p-1">
-          <div class="p-1">
-            <a class="socbt" href="https://www.facebook.com/msucomputerclub" target="blank"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div class="row">
+              <div class="col question">
+                <h4>How much coding experience do I need?</h4>
+                <span>
+                  Absolutely none. Hackathons are a great place to learn and get advice from experienced hackers. We'll
+                  also host plenty of workshops and have plenty of mentors so by the end of the 24 hours you'll have a
+                  working project even if you haven't coded a day in your life before. We also host a prize for best
+                  beginner hack.
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col question">
+                <h4>Who can come?</h4>
+                <span>
+                  If you're at a current college/university student, a recent graduate (up to 1 year), or a high school
+                  student, you're more than welcome to attend! We are open to students of all academic backgrounds and
+                  skill levels, so whether you’re an aspiring artist or an expert engineer, there’s a place for you at
+                  HawkHack!
+                  </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col question">
+                <h4>Do I need a team?</h4>
+                <span>
+                  You are welcome to come solo or in a group no more than 4. We will provide means for you to find a
+                  team if you don’t have one.
+                </span>
+              </div>
+            </div>
           </div>
-          <div class="p-1">
-            <a class="socbt" href="https://twitter.com/msucomputerclub" target="blank"><i class="fab fa-twitter"></i></a>
+          <div class="col-lg-6 col-sm-12">
+            <div class="row">
+              <div class="col question">
+                <h4>How much does it cost to attend?</h4>
+                <span>
+                  FREE, that’s how much. The event is completely FREE to attend. FREE food, FREE games, FREE fun. Sounds
+                  good, doesn’t it?
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col question">
+                <h4>Do I need to bring a computer?</h4>
+                <span>
+                  Yes, all participants must come with their own laptop if they intend to code during the competition.
+                  Laptops will not be provided.
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col question">
+                <h4>Will hardware be provided?</h4>
+                <span>
+                  Not at this time, but students are encouraged to bring their own if they have a specific device in
+                  mind they would like to use.
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col question">
+                <h4>How will I get there?</h4>
+                <span>
+                  You are responsible for finding your own transportation. Ideally, try and find a ride because we
+                  don't recommend driving back for safety reasons after a hackathon. We can help find you a carpool. We
+                  will not be providing travel reimbursement at this time.
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col question">
+                <h4>Can I win anything?</h4>
+                <span>
+                  Yes! The only way to find out is to participate in the hackathon!
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col question">
+                <h4>How will I get there?</h4>
+                <span>
+                  Just click the big "Register Now" button up top. Make sure you check your email too since we'll be
+                  having your verify your email address and sending acceptances through there too!
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col question">
+                <h4>Do you guys have a slack?</h4>
+                <span>
+                  Yes we do! You can join it here:
+                  <a
+                    href="https://join.slack.com/t/hawkhack/shared_invite/enQtNTU0MDQyNTQyNjc0LThmMGExYjIxMjk0MDRkZjMxMjQ5YjM0ZjU3YzQzNTEzMGI4ZDA5OTNlMDg3OTcwODQwNTc0YTJmN2NlNzgxMDc">
+                    join.slack.com/t/hawkhack</a>
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col question">
+                <h4>How can I or my company become a sponsor?</h4>
+                <span>
+                  If you'd like to sponsor, please send us an email at team@hawkhack.io and our team will get back to
+                  you promptly.
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col question">
+                <h4>I have another question!</h4>
+                <span>
+                  For anymore questions, you can reach us on our slack which you can join here:
+                  <a
+                    href="https://join.slack.com/t/hawkhack/shared_invite/enQtNTU0MDQyNTQyNjc0LThmMGExYjIxMjk0MDRkZjMxMjQ5YjM0ZjU3YzQzNTEzMGI4ZDA5OTNlMDg3OTcwODQwNTc0YTJmN2NlNzgxMDc">
+                    join.slack.com/t/hawkhack.
+                  </a>
+                </span>
+              </div>
+            </div>
           </div>
-          <div class="p-1">
-            <a class="socbt" href="https://www.instagram.com/msucomputerclub/" target="blank">
-              <i class="hover fab fa-instagram"></i></a>
-
-          </div>
-        </div>
-        <div class="col-md-12 d-flex justify-content-center p-1">
-          <p class="text-muted">
-            © 2018 Copyright: HawkHack
-          </p>
         </div>
       </div>
+    </section>
+    <a class="anchor" id="sponsors-anchor"></a>
+    <section id="sponsors" class="section text-dark">
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center">
+            <h2>Sponsors</h2>
+            <hr />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 justify-content-around sponsor-row">
+            <a href="https://www.ups.com">
+              <img src="./images/ups.png" width="100px" height="auto" />
+            </a>
+          </div>
+          <div class="col-lg-6 justify-content-around sponsor-row">
+            <a href="https://www.bnymellon.com/us/en/home.jsp" class="sponsor">
+              <img src="./images/bnymellon.png" />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 justify-content-around sponsor-row">
+            <a href="https://www.google.com" class="sponsor">
+              <img src="./images/Googles-Logo.png" />
+            </a>
+          </div>
+          <div class="col-lg-6 justify-content-around sponsor-row">
+            <a href="https://monsterenergy.com">
+              <img src="./images/monsterenergy.png" width="200px" height="auto" />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 justify-content-around sponsor-row">
+            <a href="https://www.montclair.edu/graduate/">
+              <img src="./images/TGS2.png" width="300px" height="auto" />
+            </a>
+          </div>
+          <div class="col-lg-6 justify-content-around sponsor-row">
+            <a href="https://www.montclaircomputerclub.com/" class="sponsor">
+              <img src="./images/ComputerClub_Logo.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center p-2 text-light" id="footer">
+      <div class="container">
+        <div class="row text-md-left">
+          <div class="col-md-12 d-flex justify-content-center p-1">
+            <h3>Stay in Touch!</h3>
+          </div>
+          <div class="col-md-12 d-flex justify-content-center p-1">
+            <div class="p-1">
+              <a class="socbt" href="https://www.facebook.com/msucomputerclub" target="blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+            <div class="p-1">
+              <a class="socbt" href="https://twitter.com/msucomputerclub" target="blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+            <div class="p-1">
+              <a class="socbt" href="https://www.instagram.com/msucomputerclub/" target="blank">
+                <i class="hover fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-12 d-flex justify-content-center p-1">
+            <p class="text-muted">
+              © 2018 Copyright: HawkHack
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript dependencies -->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 
-  </footer>
-  <!-- JavaScript dependencies -->
-  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-  <script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
+      data-dojo-config="usePlainJson: true, isDebug: false"
+    ></script>
 
-  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
-    data-dojo-config="usePlainJson: true, isDebug: false"></script>
-
-  <script src="js/scripts.js"></script>
-</body>
-
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
