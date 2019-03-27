@@ -15,7 +15,11 @@ html {
   --linear: rgba(209, 25, 13, 0.9);
   --secondLinear: rgba(34, 31, 31, 0.9);
   --white: #ffffff;
-  --gradient: linear-gradient(to bottom right, rgba(209, 25, 13, 0.9) 0%, rgba(34, 31, 31, 0.9) 100%);
+  --gradient: linear-gradient(
+    to bottom right,
+    rgba(209, 25, 13, 0.9) 0%,
+    rgba(34, 31, 31, 0.9) 100%
+  );
 }
 
 section:nth-child(odd) {
@@ -153,7 +157,11 @@ section:nth-child(odd) {
   --linear: rgba(209, 25, 13, 0.9);
   --secondLinear: rgba(34, 31, 31, 0.9);
   --white: #ffffff;
-  --gradient: linear-gradient(to bottom right, rgba(209, 25, 13, 0.9) 0%, rgba(34, 31, 31, 0.9) 100%);
+  --gradient: linear-gradient(
+    to bottom right,
+    rgba(209, 25, 13, 0.9) 0%,
+    rgba(34, 31, 31, 0.9) 100%
+  );
 }
 
 .d-flex {
@@ -177,7 +185,11 @@ section:nth-child(odd) {
   width: 100%;
   height: 100%;
   content: " ";
-  background: linear-gradient(to bottom right, rgba(209, 25, 13, 0.9) 0%, rgba(34, 31, 31, 0.9) 100%);
+  background: linear-gradient(
+    to bottom right,
+    rgba(209, 25, 13, 0.9) 0%,
+    rgba(34, 31, 31, 0.9) 100%
+  );
 }
 
 .contact-section {
@@ -344,7 +356,6 @@ hr {
     margin-top: 15vh;
     margin-left: auto;
     margin-right: auto;
-
   }
   #intro h2 {
     font-size: 1.85rem;
@@ -428,7 +439,11 @@ hr {
 
 /* FOOTER */
 #footer {
-  background: -moz-linear-gradient(315deg, #d1190d 0%, #120201 100%); /* ff3.6+ */
+  background: -moz-linear-gradient(
+    315deg,
+    #d1190d 0%,
+    #120201 100%
+  ); /* ff3.6+ */
   background: -webkit-gradient(
     linear,
     left top,
@@ -436,8 +451,16 @@ hr {
     color-stop(0%, #d1190d),
     color-stop(100%, #120201)
   ); /* safari4+,chrome */
-  background: -webkit-linear-gradient(315deg, #d1190d 0%, #120201 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(315deg, #d1190d 0%, #120201 100%); /* opera 11.10+ */
+  background: -webkit-linear-gradient(
+    315deg,
+    #d1190d 0%,
+    #120201 100%
+  ); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(
+    315deg,
+    #d1190d 0%,
+    #120201 100%
+  ); /* opera 11.10+ */
   background: -ms-linear-gradient(315deg, #d1190d 0%, #120201 100%); /* ie10+ */
   background: linear-gradient(135deg, #d1190d 0%, #120201 100%); /* w3c */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1190d', endColorstr='#120201',GradientType=1 ); /* ie6-9 */
@@ -543,7 +566,7 @@ footer {
 }
 
 .time {
-  width: 50%;
+  width: 30%;
   color: #941209;
   text-align: center;
 }
@@ -553,7 +576,7 @@ h2 {
 }
 
 .card {
-  margin-bottom: 5em;
+  margin-bottom: 2em;
 }
 
 .card-header h5 {
