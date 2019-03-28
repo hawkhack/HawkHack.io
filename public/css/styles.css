@@ -540,7 +540,8 @@ footer {
 /* SCHEDULE */
 
 #schedule {
-  margin-top: 2em;
+  margin-top: 4em;
+  margin-bottom: 4em;
   background-image: url("../images/msulanding.jpg");
   background-attachment: fixed;
   -webkit-box-shadow: 0px 0px 46px 15px #a9a7a7;
