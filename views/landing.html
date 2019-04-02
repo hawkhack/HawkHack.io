@@ -15,10 +15,7 @@
       content="montclair state university hackathon hackhawk"
     />
     <!-- Adding bootstrap, custom css files, and fontawsome -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -32,6 +29,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -89,7 +90,6 @@
         </div>
       </div>
     </nav>
-
     <section class="section intro-bg gradient" id="intro">
       <div class="gradient">
         <div class="container text-center">
@@ -99,92 +99,10 @@
                 <div class="col-sm-12">
                   <img id="logo" src="/images/hhlogo-l.png" />
                   <h2 id="title">
-                    Montclair State University Hackathon
+                    HawkHack Will Be Back
                   </h2>
-                  <a
-                    class="regbtn hide"
-                    href=""
-                  >
-                    Register Now
-                  </a>
                 </div>
-                <a
-                  class="btn btn-lg btn-outline-light"
-                  style="display:none"
-                  id="ContactUsBtn"
-                  >Contact Us</a
-                >
               </div>
-              <form
-                action="/contact"
-                id="contactform"
-                method="POST"
-                role="form"
-                style="display:none;"
-              >
-                <fieldset>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input
-                          id="name"
-                          name="name"
-                          type="text"
-                          placeholder="Your name"
-                          required
-                          class="form-control"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input
-                          id="email"
-                          name="email"
-                          type="text"
-                          placeholder="Your email"
-                          required="required"
-                          class="form-control"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input
-                          id="subject"
-                          name="subject"
-                          type="text"
-                          placeholder="Subject"
-                          required="required"
-                          class="form-control"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <textarea
-                          style="height: 150px;"
-                          id="message"
-                          name="message"
-                          placeholder="Enter your message here"
-                          rows="3"
-                          required="required"
-                          class="form-control"
-                        ></textarea>
-                      </div>
-                      <button
-                        type="submit"
-                        class="btn btn-lg btn-outline-light"
-                      >
-                        Send
-                      </button>
-                      <a class="btn btn-lg btn-outline-light" id="cancel"
-                        >Cancel</a
-                      >
-                    </div>
-                  </div>
-                </fieldset>
-              </form>
             </div>
           </div>
         </div>
@@ -209,28 +127,49 @@
               to challenge themselves and create something awesome.
             </p>
           </div>
-          <div class="row hide" style="width: 100%">
-            <div class="col-12 aboutTitle text-center">
-              <h2>When and Where?</h2>
-            </div>
-          </div>
-          <div class="col-lg-12 aboutText text-center hide">
-            <p>
-              <b>Saturday, March 30th - Sunday, March 31st</b> in the
-              <b>Student Center Ballrooms</b>
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="map hide">
-            <iframe
-              frameborder="0"
-              src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJw6dxo8v_wokRsipvcsmq9Nk&key=AIzaSyB4FZgCk09zSlEACZ5epM4h02W65vLjBDw&zoom=13"
-            ></iframe>
-          </div>
         </div>
       </div>
     </section>
+
+    <section class="section text-dark" id="past-events">
+        <div class="container">
+            <div class="row">
+              <div class="section-title text-center">
+                <h2>Past Events</h2>
+                <hr />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 ">
+                <div class="row justify-content-center">
+                    <h3>HawkHack Spring 2019</h3>
+                  </div>
+                    <div class="row justify-content-center">
+                      <div class="col-8 col-sm-12">
+                        <div class="carousel slide" id="mycar" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="./images/spring2019/033019_0036_Hackathon.jpg" alt="HawkHack Team" width="100%" height="auto"></div>
+                            <div class="carousel-item"><img src="./images/spring2019/033019_0018_Hackathon.jpg" alt="Rocky at HawkHack" width="100%" height="auto"></div>
+                            <div class="carousel-item"><img src="./images/spring2019/033019_0028_Hackathon.jpg" alt="Team communication" width="100%" height="auto"></div>
+                            <div class="carousel-item"><img src="./images/spring2019/033019_0040_Hackathon.jpg" alt="Hacking area view" width="100%" height="auto"></div>
+                            <div class="carousel-item"><img src="./images/spring2019/033019_0054_Hackathon.jpg" alt="Teams working" width="100%" height="auto"></div>
+                            <div class="carousel-item"><img src="./images/spring2019/033019_0066_Hackathon.jpg" alt="Team building" width="100%" height="auto"></div>
+                            <div class="carousel-item"><img src="./images/spring2019/033019_0002_Hackathon.jpg" alt="Check-in Line" width="100%" height="auto"></div>
+                          </div>
+                        </div>
+                        <a href="#mycar" class="carousel-control-prev" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#mycar" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </a>
+
+                      </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+      </section>
 
     <a class="anchor" id="schedule-anchor"></a>
     <section id="schedule" class="section scheduleSection skew hide">
@@ -644,13 +583,9 @@
       </div>
     </footer>
     <!-- JavaScript dependencies -->
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-
-    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-
-    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script
       type="text/javascript"

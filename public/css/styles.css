@@ -596,3 +596,8 @@ h2 {
 .hide {
   display: none;
 }
+
+.carousel-inner{
+  max-height:300px;
+
+}
