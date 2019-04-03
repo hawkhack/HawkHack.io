@@ -244,7 +244,7 @@ table {
   margin-bottom: 1em;
 }
 
-.regbtn {
+.wbtn {
   border: 1px solid white;
   border-radius: 5px;
   color: white;
@@ -253,11 +253,11 @@ table {
   cursor: pointer;
   transition: 200ms;
 }
-.regbtn:hover {
+.wbtn:hover {
   text-decoration: none;
 }
 
-.regbtn:hover {
+.wbtn:hover {
   background: white;
   color: black;
 }
