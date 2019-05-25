@@ -16,6 +16,11 @@ const passport = require("passport");
 const keys = require("./config/keys");
 const { check } = require("express-validator/check");
 const Schema = mongoose.Schema;
+const cors = require("cors");
+
+const {token, botToken } = require("./config/config");
+const request = require("request");
+
 const app = express();
 
 const User = require("./models/users");
@@ -24,6 +29,9 @@ const validateLoginInput = require("./validation/login");
 
 // Passport middleware
 app.use(passport.initialize());
+
+//cors
+app.use(cors());
 
 // Passport Config
 require("./config/passport")(passport);
@@ -170,6 +178,39 @@ app.post("/setrole", (req, res) => {
         return res.status(400).json(errors);
       }
     });
+  });
+});
+
+app.options('/api/announcements', cors())
+app.get("/api/announcements", (_req, _res)=>{
+  var log = [];
+  var history = {};
+
+  var options = {
+    url: "https://slack.com/api/groups.history",
+    qs: {
+      token: token,
+      channel: "GH7J5C9FD"
+    }
+  };
+
+  request(options, (err, res, body) => {
+    if (err) console.log(err);
+    var messages = JSON.parse(body).messages;
+    messages.forEach(element => {
+      if (element.type == "message") {
+        log.unshift({
+          text: element.text,
+          ts: element.ts
+        });
+      }
+    });
+    history = {
+      status: 200,
+      log: log
+    };
+    console.log(`returned ${history}`);
+    return _res.status(200).json(history);
   });
 });
 
