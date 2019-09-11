@@ -237,8 +237,9 @@ table {
   border-radius: 5px;
   color: white !important;
   padding: 1rem 2rem;
-  font-size: 0.8rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
   cursor: pointer;
   transition: 200ms;
   white-space: nowrap;
@@ -248,13 +249,7 @@ table {
 }
 .regbtn:hover {
   background: white;
-  color: black !important;
-}
-
-@media only screen and (max-width: 600px) {
-  .regbtn {
-    padding: 0.5rem 0.5rem;
-  }
+  color: var(--primary) !important;
 }
 #title {
   margin-bottom: 2rem;
