@@ -247,9 +247,10 @@ table {
 .regbtn {
   border: 1px solid white;
   border-radius: 5px;
-  color: white;
+  color: white !important;
   padding: 1rem 2rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  font-weight: 400;
   cursor: pointer;
   transition: 200ms;
 }
@@ -259,7 +260,7 @@ table {
 
 .regbtn:hover {
   background: white;
-  color: black;
+  color: black !important;
 }
 #title {
   margin-bottom: 2rem;
