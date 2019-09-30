@@ -67,6 +67,10 @@ app.get("/login", (req, res) => {
   res.sendFile("/views/login.html", { root: __dirname });
 });
 
+app.get("/sponsorship-packet",(req,res)=>{
+  res.sendFile("/views/sponsor.html", { root: __dirname });
+})
+
 // Connect to MonogoDB
 mongoose
   .connect(url, { useNewUrlParser: true })
