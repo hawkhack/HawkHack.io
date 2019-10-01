@@ -18,7 +18,7 @@ const { check } = require("express-validator/check");
 const Schema = mongoose.Schema;
 const cors = require("cors");
 
-const {token, botToken } = require("./config/config");
+const { token, botToken } = require("./config/config");
 const request = require("request");
 
 const app = express();
@@ -67,9 +67,12 @@ app.get("/login", (req, res) => {
   res.sendFile("/views/login.html", { root: __dirname });
 });
 
-app.get("/sponsorship-packet",(req,res)=>{
-  res.sendFile("/views/sponsor.html", { root: __dirname });
-})
+app.get("/sponsorship-packet", (req, res) => {
+  res.redirect("/HawkHack_sponsorship_packet");
+});
+app.get("/HawkHack_sponsorship_packet", (req, res) => {
+  res.sendFile("/views/packet.pdf", { root: __dirname });
+});
 
 // Connect to MonogoDB
 mongoose
@@ -107,7 +110,13 @@ app.post("/register", (req, res) => {
         newUser.password = hash;
         newUser
           .save()
-          .then(user => res.sendFile("/views/login.html", { root: __dirname }, console.log(user)))
+          .then(user =>
+            res.sendFile(
+              "/views/login.html",
+              { root: __dirname },
+              console.log(user)
+            )
+          )
           .catch(err => res.json(err));
       });
     });
@@ -138,9 +147,16 @@ app.post("/login", (req, res) => {
       if (isMatch) {
         const payload = { id: user.id, username: user.username };
 
-        jwt.sign(payload, keys.secretOrkey, { expiresIn: 3600 }, (err, token) => {
-          res.sendFile("/views/admin.html", { root: __dirname }).json({ success: true, token: "Bearer " + token });
-        });
+        jwt.sign(
+          payload,
+          keys.secretOrkey,
+          { expiresIn: 3600 },
+          (err, token) => {
+            res
+              .sendFile("/views/admin.html", { root: __dirname })
+              .json({ success: true, token: "Bearer " + token });
+          }
+        );
       } else {
         errors.password = "Password incorrect";
         return res.status(400).json(errors);
@@ -172,7 +188,11 @@ app.post("/setrole", (req, res) => {
     }
     bcrypt.compare(password, user.password).then(isMatch => {
       if (isMatch) {
-        User.findOneAndUpdate({ username: userchange }, { $set: { role: rolechange } }, { new: true }).then(user => {
+        User.findOneAndUpdate(
+          { username: userchange },
+          { $set: { role: rolechange } },
+          { new: true }
+        ).then(user => {
           console.log(`role of ${userchange} changed to ${rolechange}`);
           // res.redirect("/login");
           res.json(user);
@@ -185,8 +205,8 @@ app.post("/setrole", (req, res) => {
   });
 });
 
-app.options('/api/announcements', cors())
-app.get("/api/announcements", (_req, _res)=>{
+app.options("/api/announcements", cors());
+app.get("/api/announcements", (_req, _res) => {
   var log = [];
   var history = {};
 
